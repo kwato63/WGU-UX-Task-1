@@ -76,11 +76,11 @@
 
     <script>
       async function fetch_header() {
-      const res =await fetch("components/header.html")
-      const header_text = res.text()
-      document.getElementById("header-container").innerHTML = header_text
+        const res = await fetch("components/header.html");
+        const header_text = await res.text();
+        document.getElementById("header-container").innerHTML = header_text;
       }
-      fetch_header()
+      fetch_header();
       // fetch("components/header.html")
       //   .then((res) => res.text())
       //   .then((data) => {
