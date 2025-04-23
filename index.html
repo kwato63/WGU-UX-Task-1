@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div id="header-placeholder"></div>
+    <div id="header-container"></div>
 
     <main>
       <section class="hero-banner">
@@ -75,18 +75,15 @@
     </footer>
 
     <script>
-      async function fetch_header() {
-        const header_container = document.getElementById("header-container")
-        const res = await fetch("components/header.html");
-        const header_text = await res.text();
-        header_container.innerHTML = header_text;
-      }
-      fetch_header();
-      // fetch("components/header.html")
-      //   .then((res) => res.text())
-      //   .then((data) => {
-      //     document.getElementById("header-container").innerHTML = data;
-      //   });
+      fetch("components/header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          const headerContainer = document.getElementById("header-container");
+          if (!headerContainer) {
+            console.log("Missing Header Container");
+          }
+          document.getElementById("header-container").innerHTML = data;
+        });
       // let currentSlide = 0;
       // const slides = document.querySelectorAll(".carousel-slide");
 
