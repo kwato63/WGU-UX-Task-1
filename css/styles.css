@@ -32,10 +32,6 @@ nav a {
   text-decoration: none;
 }
 
-main {
-  padding: 2rem;
-}
-
 .hero {
   background: #f4a261;
   color: white;
@@ -100,7 +96,7 @@ main {
   }
 }
 
-.about-preview {
+section .about {
   margin-top: 2rem;
 }
 
