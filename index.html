@@ -75,14 +75,17 @@
     </footer>
 
     <script>
-      const res = await fetch("components/header.html")
+      async function fetch_header() {
+      const res =await fetch("components/header.html")
       const header_text = res.text()
       document.getElementById("header-container").innerHTML = header_text
-      fetch("components/header.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("header-container").innerHTML = data;
-        });
+      }
+      fetch_header()
+      // fetch("components/header.html")
+      //   .then((res) => res.text())
+      //   .then((data) => {
+      //     document.getElementById("header-container").innerHTML = data;
+      //   });
       // let currentSlide = 0;
       // const slides = document.querySelectorAll(".carousel-slide");
 
