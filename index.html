@@ -76,9 +76,10 @@
 
     <script>
       async function fetch_header() {
+        const header_container = document.getElementById("header-container")
         const res = await fetch("components/header.html");
         const header_text = await res.text();
-        document.getElementById("header-container").innerHTML = header_text;
+        header_container.innerHTML = header_text;
       }
       fetch_header();
       // fetch("components/header.html")
