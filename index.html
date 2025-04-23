@@ -1,1 +1,96 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Taniti</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section class="hero-banner">
+        <div class="hero-content">
+          <h2>Welcome to Taniti</h2>
+          <p>
+            Your tropical island escape awaits. Explore white-sand beaches, lush
+            rainforests, and unforgettable island adventures.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-preview">
+        <h3>Discover Taniti</h3>
+        <p>
+          Taniti is a small, tropical island in the Pacific with a diverse
+          landscape of beaches, mountains, and rainforests. Learn about our
+          history, culture, and must-see locations.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
+          necessitatibus deserunt, expedita asperiores harum dolorum est officia
+          quam non impedit quasi deleniti modi quia soluta dolores eos, dolore
+          beatae dolorem.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
+          necessitatibus deserunt, expedita asperiores harum dolorum est officia
+          quam non impedit quasi deleniti modi quia soluta dolores eos, dolore
+          beatae dolorem.
+        </p>
+        <a href="about.html" class="button">Learn More</a>
+      </section>
+
+      <section class="teasers">
+        <div class="teaser">
+          <h4>Find a Place to Stay</h4>
+          <p>
+            From cozy hostels to luxury resorts, Taniti has lodging for every
+            traveler.
+          </p>
+          <a href="lodging.html">Explore Lodging</a>
+        </div>
+        <div class="teaser">
+          <h4>Where to Eat</h4>
+          <p>
+            Enjoy local seafood, American-style favorites, or delicious
+            Pan-Asian cuisine.
+          </p>
+          <a href="dining.html">See Dining Options</a>
+        </div>
+        <div class="teaser">
+          <h4>Adventures Await</h4>
+          <p>
+            Snorkel, hike, tour the volcano, or zipline through the rainforest.
+          </p>
+          <a href="attractions.html">See Attractions</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Taniti Tourism Board</p>
+    </footer>
+
+    <script>
+      fetch("components/header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+      // let currentSlide = 0;
+      // const slides = document.querySelectorAll(".carousel-slide");
+
+      // function showNextSlide() {
+      //   slides[currentSlide].classList.remove("active");
+      //   currentSlide = (currentSlide + 1) % slides.length;
+      //   slides[currentSlide].classList.add("active");
+      // }
+
+      // setInterval(showNextSlide, 4000); // Change image every 4 seconds
+    </script>
+  </body>
+</html>
