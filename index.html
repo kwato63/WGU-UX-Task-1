@@ -79,7 +79,7 @@
       fetch("components/header.html")
         .then((res) => res.text())
         .then((data) => {
-          document.getElementById("header-placeholder").innerHTML = data;
+          document.getElementById("header-container").innerHTML = data;
         });
       // let currentSlide = 0;
       // const slides = document.querySelectorAll(".carousel-slide");
