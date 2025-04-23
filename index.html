@@ -6,12 +6,20 @@
     <title>Welcome to Taniti</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-
-  <body>
+  <body
+    data-hero-image="images/beach.jpg"
+    data-hero-title="Welcome to Taniti"
+    data-hero-text="Your tropical island escape awaits. Explore white-sand beaches, lush rainforests, and unforgettable island adventures."
+  >
+    <div id="hero-container"></div>
     <div id="header-container"></div>
-
     <main>
-      <section class="hero-banner" style="--hero-image: url('images/header-hawaii-TROPICUS0522-ccdf2aa690184c3eb3ca2f0186e1917c.jpeg');">
+      <section
+        class="hero-banner"
+        style="
+          --hero-image: url('images/header-hawaii-TROPICUS0522-ccdf2aa690184c3eb3ca2f0186e1917c.jpeg');
+        "
+      >
         <div class="hero-content">
           <h2>Welcome to Taniti</h2>
           <p>
@@ -120,14 +128,27 @@
           }
           document.getElementById("header-container").innerHTML = data;
         });
-      // let currentSlide = 0;
-      // const slides = document.querySelectorAll(".carousel-slide");
+      async function fetchHero() {
+        fetch("components/hero.html")
+          .then((res) => res.text())
+          .then((heroHTML) => {
+            const container = document.getElementById("hero-container");
+            container.innerHTML = heroHTML;
 
-      // function showNextSlide() {
-      //   slides[currentSlide].classList.remove("active");
-      //   currentSlide = (currentSlide + 1) % slides.length;
-      //   slides[currentSlide].classList.add("active");
-      // }
+            // Set content and background after insertion
+            const hero = container.querySelector(".hero-banner");
+            const title = container.querySelector("#hero-title");
+            const text = container.querySelector("#hero-text");
+
+            const { heroImage, heroTitle, heroText } = document.body.dataset;
+
+            hero.style.backgroundImage = `url('${heroImage}')`;
+            title.textContent = heroTitle;
+            text.textContent = heroText;
+          });
+      }
+
+      fetchHero();
 
       // setInterval(showNextSlide, 4000); // Change image every 4 seconds
     </script>
