@@ -35,39 +35,12 @@
         </p>
         <a href="about.html" class="button">Learn More</a>
       </section>
-      <section id="event-teasers" class="teasers" data-src="data/events.json">
-        <h2>Island Events</h2>
-        <!-- Teasers will be injected here -->
-      </section>
-
-      <section id="event-teasers" class="teasers">
-        <h2>Island Events</h2>
-
-        <div class="teaser-left">
-          <img class="teaser-image" src="images/Beach.jpeg" />
-          <div>
-            <h3>Event Name</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-              necessitatibus deserunt, expedita asperiores harum dolorum est
-              officia quam non impedit quasi deleniti modi quia soluta dolores
-              eos, dolore beatae dolorem.
-            </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-        <div class="teaser-right">
-          <h3>Event Name</h3>
-          <p>
-            <img class="teaser-image" src="images/Beach.jpeg" />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-            necessitatibus deserunt, expedita asperiores harum dolorum est
-            officia quam non impedit quasi deleniti modi quia soluta dolores
-            eos, dolore beatae dolorem.
-          </p>
-          <a href="#">Read More</a>
-        </div>
-      </section>
+      <section
+        id="event-teasers"
+        class="teasers"
+        data-src="data/events.json"
+        data-header="Island Events"
+      ></section>
     </main>
 
     <footer>
@@ -111,7 +84,10 @@
 
         for (const section of sections) {
           const jsonPath = section.dataset.src;
-
+          const headerText = section.dataset.header;
+          const header = document.createElement("h3"); 
+          header.innerText=headerText
+          section.appendChild(header)
           try {
             const res = await fetch(jsonPath);
             if (!res.ok)

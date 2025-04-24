@@ -69,7 +69,7 @@ nav a {
 
 .hero-banner {
   background-image: var(--hero-image);
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   height: 60vh;
   display: flex;
@@ -80,7 +80,6 @@ nav a {
   color: white;
   padding: 2rem;
   box-shadow: inset 0 -50px 50px -10px rgba(0, 0, 0, 0.5);
-  /* soft fade at bottom */
 }
 
 .hero-banner::before {
