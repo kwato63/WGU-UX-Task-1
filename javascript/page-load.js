@@ -79,6 +79,17 @@ async function fetchHeader() {
       }
     }
   }
+  async function fetchfooter() {
+    fetch("components/footer.html")
+      .then((res) => res.text())
+      .then((data) => {
+        const headerContainer = document.getElementById("header-container");
+        if (!headerContainer) {
+          console.log("Missing Header Container");
+        }
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  }
 
   // Call the function after DOM is ready
   document.addEventListener("DOMContentLoaded", () => {
