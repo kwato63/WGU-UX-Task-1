@@ -1,20 +1,39 @@
 [
     {
-        "title": "Sunset Luau",
-        "shortDescription": "Experience traditional island dancing and cuisine under the stars.",
-        "longDescription": "Join us for an unforgettable evening of music, hula performances, and a buffet featuring local delicacies. Perfect for all ages and included in many resort packages.",
-        "image": "images/luau.jpg"
+      "title": "The Coconut Grill",
+      "shortDescription": "Casual beachfront dining with island-style BBQ.",
+      "longDescription": "Grab a table in the sand and enjoy grilled seafood, pork skewers, and fresh coconut drinks with live ukulele music nightly.",
+      "image": "images/Beach.jepg",
+      "imageCredit": "Taniti Eats Blog",
+      "imageTitle": "Beachfront dining at The Coconut Grill",
+      "imageAltText": "Outdoor tables on the beach with a grill and ocean in background"
     },
     {
-        "title": "Taniti Surf Classic",
-        "shortDescription": "Watch pro surfers take on the island’s biggest waves.",
-        "longDescription": "This annual competition brings together top talent from around the world. Food trucks, live music, and beach activities make it a must-see for visitors.",
-        "image": "images/surf-contest.jpg"
+      "title": "Mango Grove",
+      "shortDescription": "Farm-to-table dining in a lush garden setting.",
+      "longDescription": "Seasonal menus highlight locally grown fruits, vegetables, and fish. A serene and scenic spot for romantic dinners.",
+      "image": "images/Beach.jepg",
+      "imageCredit": "Photo by Taste Taniti",
+      "imageTitle": "Mango Grove Restaurant garden patio",
+      "imageAltText": "Outdoor garden restaurant with hanging lights"
     },
     {
-        "title": "Jungle Night Hike",
-        "shortDescription": "Explore the rainforest with expert guides after dark.",
-        "longDescription": "Discover Taniti’s nocturnal wildlife and experience the magic of the jungle by moonlight. Limited to 15 guests per night for an intimate adventure.",
-        "image": "images/jungle-hike.jpg"
+      "title": "Tiki Tapas Bar",
+      "shortDescription": "Shareable plates, tropical cocktails, and sunset views.",
+      "longDescription": "Sip handcrafted drinks and try unique island tapas while watching the sun set over the bay. Popular with locals and tourists alike.",
+      "image": "images/Beach.jepg",
+      "imageCredit": "Taniti Lifestyle Magazine",
+      "imageTitle": "Tiki Tapas patio at sunset",
+      "imageAltText": "Cocktail bar with tapas plates and tiki torches at dusk"
+    },
+    {
+      "title": "Volcano Pizza",
+      "shortDescription": "Wood-fired pizza with a tropical twist.",
+      "longDescription": "Famous for its pineapple-habanero sauce and taro crust options, Volcano Pizza brings the heat and the flavor.",
+      "image": "images/Beach.jepg",
+      "imageCredit": "Photo courtesy of Volcano Pizza",
+      "imageTitle": "Chef placing pizza in a wood-fired oven",
+      "imageAltText": "Wood-fired pizza oven and tropical toppings"
     }
-]
+  ]
+  
