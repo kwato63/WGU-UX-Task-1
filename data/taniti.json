@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Discover Taniti",
+        "shortDescription": "Your tropical island escape awaits. Explore white-sand beaches, lush rainforests, and unforgettable island adventures.",
+        "longDescription": "Taniti is a small, tropical island in the Pacific with a diverse landscape of beaches, mountains, and rainforests. Learn about our history, culture, and must-see locations. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt necessitatibus deserunt, expedita asperiores harum dolorum est officia quam non impedit quasi deleniti modi quia soluta dolores eos, dolore beatae dolorem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt necessitatibus deserunt, expedita asperiores harum dolorum est officia quam non impedit quasi deleniti modi quia soluta dolores eos, dolore beatae dolorem.",
+        "image": "images/Beach.jpeg",
+        "imageCredit": "Photo by Taniti Travel Bureau",
+        "imageTitle": "Evening strolls in downtown Taniti City",
+        "imageAltText": "People walking past colorful shops and cafes in Taniti City"
+    }
+]

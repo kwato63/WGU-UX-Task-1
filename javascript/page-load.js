@@ -84,7 +84,7 @@ async function renderAllCarousels() {
 
   sections.forEach((section) => {
     const dataSrc = section.dataset.src;
-    const headerText = section.dataset.header || "Explore Taniti";
+    const headerText = section.dataset.header;
     if (!dataSrc) return;
 
     fetch(dataSrc)
@@ -158,6 +158,42 @@ async function renderAllCarousels() {
       });
   });
 }
+async function renderAllAboutSections() {
+  const sections = document.querySelectorAll(".about");
+
+  sections.forEach(async (section) => {
+    const dataSrc = section.dataset.src;
+    const dataTitle = section.dataset.title;
+
+    if (!dataSrc || !dataTitle) return;
+
+    try {
+      const response = await fetch(dataSrc);
+      const data = await response.json();
+
+      const matchedItem = data.find((item) => item.title === dataTitle);
+      if (!matchedItem) {
+        console.warn(
+          `No matching item found in ${dataSrc} for title: "${dataTitle}"`
+        );
+        return;
+      }
+
+      section.innerHTML = "";
+
+      const titleEl = document.createElement("h2");
+      titleEl.textContent = matchedItem.title;
+      section.appendChild(titleEl);
+
+      const para = document.createElement("p");
+      para.textContent = matchedItem.longDescription;
+      section.appendChild(para);
+
+    } catch (err) {
+      console.error(`Failed to load about section from ${dataSrc}:`, err);
+    }
+  });
+}
 
 async function fetchfooter() {
   fetch("components/footer.html")
@@ -177,5 +213,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchHero();
   renderAllTeaserSections();
   renderAllCarousels();
+  renderAllAboutSections();
   fetchfooter();
 });
