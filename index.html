@@ -35,17 +35,18 @@
         </p>
         <a href="about.html" class="button">Learn More</a>
       </section>
+      <section id="event-teasers" class="teasers" data-src="data/events.json">
+        <h2>Island Events</h2>
+        <!-- Teasers will be injected here -->
+      </section>
 
-      <section class="teasers">
+      <section id="event-teasers" class="teasers">
         <h2>Island Events</h2>
 
-        <div class="teaser">
+        <div class="teaser-left">
           <h3>Event Name</h3>
           <p>
-            <img
-              class="teaser-left"
-              src="images/Beach.jpeg"
-            />
+            <img class="teaser-image" src="images/Beach.jpeg" />
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
             necessitatibus deserunt, expedita asperiores harum dolorum est
             officia quam non impedit quasi deleniti modi quia soluta dolores
@@ -53,13 +54,10 @@
           </p>
           <a href="#">Read More</a>
         </div>
-        <div class="teaser">
+        <div class="teaser-right">
           <h3>Event Name</h3>
           <p>
-            <img
-              class="teaser-right"
-              src="images/Beach.jpeg"
-            />
+            <img class="teaser-image" src="images/Beach.jpeg" />
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
             necessitatibus deserunt, expedita asperiores harum dolorum est
             officia quam non impedit quasi deleniti modi quia soluta dolores
@@ -68,34 +66,7 @@
           <a href="#">Read More</a>
         </div>
 
-        <div class="teaser">
-          <h3>Event Name</h3>
-          <p>
-            <img
-              class="teaser-left"
-              src="images/Beach.jpeg"
-            />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-            necessitatibus deserunt, expedita asperiores harum dolorum est
-            officia quam non impedit quasi deleniti modi quia soluta dolores
-            eos, dolore beatae dolorem.
-          </p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="teaser">
-          <h3>Event Name</h3>
-          <p>
-            <img
-              class="teaser-right"
-              src="images/Beach.jpeg"
-            />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-            necessitatibus deserunt, expedita asperiores harum dolorum est
-            officia quam non impedit quasi deleniti modi quia soluta dolores
-            eos, dolore beatae dolorem.
-          </p>
-          <a href="#">Read More</a>
-        </div>
+
       </section>
     </main>
 
@@ -132,7 +103,36 @@
             text.textContent = heroText;
           });
       }
+      async function loadAndRenderTeasers(jsonPath) {
+        try {
+          const res = await fetch(jsonPath);
+          if (!res.ok) throw new Error(`Failed to fetch: ${res.statusText}`);
 
+          const events = await res.json();
+          const teaserSection = document.querySelector(".teasers");
+
+          events.forEach((event, index) => {
+            const teaser = document.createElement("div");
+            teaser.classList.add("teaser");
+
+            const imgClass = index % 2 === 0 ? "teaser-left" : "teaser-right";
+
+            teaser.innerHTML = `
+          <h3>${event.title}</h3>
+          <p>
+            <img class="${imgClass}" src="${event.image}" alt="${event.title}" />
+            ${event.shortDescription}
+          </p>
+          <a href="#" onclick="alert(\`${event.longDescription}\`); return false;">Read More</a>
+        `;
+
+            teaserSection.appendChild(teaser);
+          });
+        } catch (err) {
+          console.error("Error loading teasers:", err);
+        }
+      }
+      loadAndRenderTeasers("data/events.json")
       fetchHero();
 
       // setInterval(showNextSlide, 4000); // Change image every 4 seconds

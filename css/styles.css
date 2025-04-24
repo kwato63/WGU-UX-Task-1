@@ -29,6 +29,7 @@ footer {
 
 #header-container {
   position: sticky;
+  min-height: 70px;
   top: 0;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.9);
@@ -62,6 +63,7 @@ nav a {
 /* Hero Sections */
 /* ------------- */
 
+#hero-container,
 .hero-banner {
   background-image: var(--hero-image);
   background-size: cover;
@@ -112,7 +114,7 @@ nav a {
 /* -------------- */
 .about {
   max-width: 900px;
-  margin: 4rem auto;
+  margin: 0 auto;
   padding: 2rem;
   background-color: #fdfdfd;
   border-radius: 12px;
