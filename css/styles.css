@@ -63,10 +63,13 @@ nav a {
 /* Hero Sections */
 /* ------------- */
 
-#hero-container,
+#hero-container {
+  height: 60vh;
+}
+
 .hero-banner {
   background-image: var(--hero-image);
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center;
   height: 60vh;
   display: flex;
@@ -210,7 +213,8 @@ nav a {
 .teaser-left {
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* Optional: aligns image and text top */
+  align-items: flex-start;
+  /* Optional: aligns image and text top */
   margin-bottom: 2.5rem;
 }
 
