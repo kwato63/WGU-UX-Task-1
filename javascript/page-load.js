@@ -79,6 +79,51 @@ async function renderAllTeaserSections() {
     }
   }
 }
+async function renderAllCarousels() {
+  const sections = document.querySelectorAll(".carousel-teaser");
+
+  sections.forEach((section) => {
+    const dataSrc = section.dataset.src;
+    const headerText = section.dataset.header || "Explore Taniti";
+
+    if (!dataSrc) return;
+
+    fetch(dataSrc)
+      .then((res) => res.json())
+      .then((data) => {
+        // Header
+        const header = document.createElement("h2");
+        header.textContent = headerText;
+        section.appendChild(header);
+
+        // Carousel Wrapper
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("carousel-wrapper");
+
+        data.forEach((item) => {
+          const slide = document.createElement("div");
+          slide.classList.add("carousel-slide");
+
+          slide.innerHTML = `
+            <div class="carousel-image" style="background-image: url('${item.image}');" role="img" aria-label="${item.imageAltText}"></div>
+            <div class="carousel-content">
+              <h3>${item.name}</h3>
+              <p>${item.shortDescription}</p>
+              <small class="image-credit">${item.imageCredit}</small>
+            </div>
+          `;
+
+          wrapper.appendChild(slide);
+        });
+
+        section.appendChild(wrapper);
+      })
+      .catch((err) => {
+        console.error(`Failed to load carousel data from ${dataSrc}:`, err);
+      });
+  });
+}
+
 async function fetchfooter() {
   fetch("components/footer.html")
     .then((res) => res.text())
@@ -96,5 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchHeader();
   fetchHero();
   renderAllTeaserSections();
+  renderAllCarousels();
   fetchfooter();
 });

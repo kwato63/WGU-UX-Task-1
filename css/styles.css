@@ -14,11 +14,9 @@ body {
 /* General */
 /* ------- */
 
-
 /* ------- */
 /* Footer Section */
 /* ------- */
-
 
 footer {
   background-color: #264653;
@@ -91,7 +89,6 @@ header nav a {
 /* Header Sections */
 /* --------------- */
 
-
 /* ------------- */
 /* Hero Sections */
 /* ------------- */
@@ -142,7 +139,6 @@ header nav a {
 /* Hero Sections */
 /* ------------- */
 
-
 /* -------------- */
 /* About Sections */
 /* -------------- */
@@ -189,8 +185,6 @@ header nav a {
 /* About Sections */
 /* -------------- */
 
-
-
 /* --------------- */
 /* Teaser Sections */
 /* --------------- */
@@ -207,7 +201,6 @@ header nav a {
   margin-bottom: 2rem;
   color: #333;
 }
-
 
 .teasers h3 {
   font-size: 1.5rem;
@@ -258,6 +251,82 @@ header nav a {
   margin-bottom: 2.5rem;
 }
 
-/* --------------- */
-/* Teaser Sections */
-/* --------------- */
+/* ---------------- */
+/*  Teaser Sections */
+/* ---------------- */
+
+/* ------------------------ */
+/* Carousel Teaser Sections */
+/* ------------------------ */
+.carousel-teaser {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.carousel-teaser h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.carousel-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+}
+
+.carousel-slide {
+  min-width: 300px;
+  flex: 0 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover {
+  transform: scale(1.02);
+}
+
+.carousel-image {
+  height: 180px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.carousel-content h3 {
+  font-size: 1.25rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.image-credit {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* ------------------------ */
+/* Carousel Teaser Sections */
+/* ------------------------ */
