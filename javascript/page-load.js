@@ -107,7 +107,7 @@ async function renderAllCarousels() {
           slide.innerHTML = `
             <div class="carousel-image" style="background-image: url('${item.image}');" role="img" aria-label="${item.imageAltText}"></div>
             <div class="carousel-content">
-              <h3>${item.name}</h3>
+              <h3>${item.title}</h3>
               <p>${item.shortDescription}</p>
               <small class="image-credit">${item.imageCredit}</small>
             </div>
