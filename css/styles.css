@@ -265,14 +265,19 @@ header nav a {
 /* ------------------------ */
 /* Carousel Teaser Sections */
 /* ------------------------ */
+
+
+.carousel-teasers {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 .carousel-container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 1000px;
   height: 100%;
-  margin: 0 auto;
-  padding: 2rem;
 }
 
 .carousel-track {
@@ -325,13 +330,6 @@ header nav a {
   font-size: 1rem;
   line-height: 1.4;
   color: #444;
-}
-
-.image-credit {
-  display: block;
-  margin-top: 0.75rem;
-  font-size: 0.8rem;
-  color: #888;
 }
 
 .carousel-btn {
