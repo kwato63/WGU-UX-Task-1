@@ -34,7 +34,7 @@ async function fetchHeader() {
     for (const section of sections) {
       const jsonPath = section.dataset.src;
       const headerText = section.dataset.header;
-      const header = document.createElement("h3");
+      const header = document.createElement("h2");
       header.innerText = headerText;
       section.appendChild(header);
       try {
