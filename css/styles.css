@@ -258,41 +258,56 @@ header nav a {
 /* ------------------------ */
 /* Carousel Teaser Sections */
 /* ------------------------ */
-.carousel-teaser {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
+.carousel-container {
+  position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
-.carousel-teaser h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #333;
-}
-
-.carousel-wrapper {
+.carousel-track {
   display: flex;
+  transition: transform 0.4s ease-in-out;
   gap: 1.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 .carousel-slide {
-  min-width: 300px;
-  flex: 0 0 auto;
+  flex: 0 0 300px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  scroll-snap-align: start;
   transition: transform 0.3s ease;
 }
 
 .carousel-slide:hover {
   transform: scale(1.02);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-btn.left {
+  left: -10px;
+}
+
+.carousel-btn.right {
+  right: -10px;
 }
 
 .carousel-image {

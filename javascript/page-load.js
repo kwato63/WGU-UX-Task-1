@@ -85,7 +85,6 @@ async function renderAllCarousels() {
   sections.forEach((section) => {
     const dataSrc = section.dataset.src;
     const headerText = section.dataset.header || "Explore Taniti";
-
     if (!dataSrc) return;
 
     fetch(dataSrc)
@@ -96,9 +95,22 @@ async function renderAllCarousels() {
         header.textContent = headerText;
         section.appendChild(header);
 
-        // Carousel Wrapper
-        const wrapper = document.createElement("div");
-        wrapper.classList.add("carousel-wrapper");
+        // Carousel Container
+        const container = document.createElement("div");
+        container.classList.add("carousel-container");
+
+        // Arrow Buttons
+        const leftBtn = document.createElement("button");
+        leftBtn.classList.add("carousel-btn", "left");
+        leftBtn.innerHTML = "&#10094;";
+
+        const rightBtn = document.createElement("button");
+        rightBtn.classList.add("carousel-btn", "right");
+        rightBtn.innerHTML = "&#10095;";
+
+        // Carousel Track
+        const track = document.createElement("div");
+        track.classList.add("carousel-track");
 
         data.forEach((item) => {
           const slide = document.createElement("div");
@@ -112,11 +124,39 @@ async function renderAllCarousels() {
               <small class="image-credit">${item.imageCredit}</small>
             </div>
           `;
-
-          wrapper.appendChild(slide);
+          track.appendChild(slide);
         });
 
-        section.appendChild(wrapper);
+        container.appendChild(leftBtn);
+        container.appendChild(track);
+        container.appendChild(rightBtn);
+        section.appendChild(container);
+
+        // Scroll logic
+        let currentIndex = 0;
+        const slides = track.querySelectorAll(".carousel-slide");
+
+        const updateCarousel = () => {
+          const slideWidth = slides[0].offsetWidth + 24; // include margin or gap
+          track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        };
+
+        leftBtn.addEventListener("click", () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+          }
+        });
+
+        rightBtn.addEventListener("click", () => {
+          if (currentIndex < slides.length - 1) {
+            currentIndex++;
+            updateCarousel();
+          }
+        });
+
+        // Adjust on window resize
+        window.addEventListener("resize", updateCarousel);
       })
       .catch((err) => {
         console.error(`Failed to load carousel data from ${dataSrc}:`, err);
