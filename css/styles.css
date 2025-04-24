@@ -191,7 +191,7 @@ nav a {
 .teasers .teaser-image {
   max-width: 250px;
   height: auto;
-  margin: 0 1rem 1rem 0;
+  margin: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -211,6 +211,7 @@ nav a {
 .teaser-left {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   align-items: flex-start;
   /* Optional: aligns image and text top */
   margin-bottom: 2.5rem;
@@ -219,6 +220,7 @@ nav a {
 .teaser-right {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-evenly;
   align-items: flex-start;
   margin-bottom: 2.5rem;
 }
