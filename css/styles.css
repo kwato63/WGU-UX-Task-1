@@ -174,24 +174,20 @@ nav a {
   color: #333;
 }
 
-.teaser {
-  margin-bottom: 2.5rem;
-}
 
-.teaser h3 {
+.teasers h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   text-align: left;
   color: #222;
 }
 
-.teaser p {
+.teasers p {
   line-height: 1.6;
   text-align: left;
 }
 
-.teaser img.teaser-left,
-.teaser img.teaser-right {
+.teasers .teaser-image {
   max-width: 250px;
   height: auto;
   margin: 0 1rem 1rem 0;
@@ -199,15 +195,7 @@ nav a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.teaser img.teaser-left {
-  float: left;
-}
-
-.teaser img.teaser-right {
-  float: right;
-}
-
-.teaser a {
+.teasers a {
   display: inline-block;
   margin-top: 1rem;
   color: #0077cc;
@@ -215,14 +203,22 @@ nav a {
   font-weight: bold;
 }
 
-.teaser a:hover {
+.teasers a:hover {
   text-decoration: underline;
 }
 
-.teaser::after {
-  content: "";
-  display: table;
-  clear: both;
+.teaser-left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Optional: aligns image and text top */
+  margin-bottom: 2.5rem;
+}
+
+.teaser-right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
 }
 
 /* --------------- */
