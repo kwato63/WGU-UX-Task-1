@@ -99,7 +99,7 @@ async function renderAllCarousels() {
         const container = document.createElement("div");
         container.classList.add("carousel-container");
 
-        // Arrow Buttons
+        // Navigation Buttons
         const leftBtn = document.createElement("button");
         leftBtn.classList.add("carousel-btn", "left");
         leftBtn.innerHTML = "&#10094;";
@@ -108,13 +108,14 @@ async function renderAllCarousels() {
         rightBtn.classList.add("carousel-btn", "right");
         rightBtn.innerHTML = "&#10095;";
 
-        // Carousel Track
+        // Carousel Track (positioned slides)
         const track = document.createElement("div");
         track.classList.add("carousel-track");
 
-        data.forEach((item) => {
+        data.forEach((item, i) => {
           const slide = document.createElement("div");
           slide.classList.add("carousel-slide");
+          if (i === 0) slide.classList.add("active");
 
           slide.innerHTML = `
             <div class="carousel-image" style="background-image: url('${item.image}');" role="img" aria-label="${item.imageAltText}"></div>
@@ -132,31 +133,25 @@ async function renderAllCarousels() {
         container.appendChild(rightBtn);
         section.appendChild(container);
 
-        // Scroll logic
+        // Slide logic
         let currentIndex = 0;
         const slides = track.querySelectorAll(".carousel-slide");
 
-        const updateCarousel = () => {
-          const slideWidth = slides[0].offsetWidth + 24; // include margin or gap
-          track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        const showSlide = (index) => {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+          });
         };
 
         leftBtn.addEventListener("click", () => {
-          if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-          }
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          showSlide(currentIndex);
         });
 
         rightBtn.addEventListener("click", () => {
-          if (currentIndex < slides.length - 1) {
-            currentIndex++;
-            updateCarousel();
-          }
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
         });
-
-        // Adjust on window resize
-        window.addEventListener("resize", updateCarousel);
       })
       .catch((err) => {
         console.error(`Failed to load carousel data from ${dataSrc}:`, err);
