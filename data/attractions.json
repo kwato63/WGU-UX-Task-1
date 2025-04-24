@@ -1,39 +1,48 @@
 [
     {
-      "title": "Sunset Luau",
-      "shortDescription": "Experience traditional island dancing and cuisine under the stars.",
-      "longDescription": "Join us for an unforgettable evening of music, hula performances, and a buffet featuring local delicacies. Perfect for all ages and included in many resort packages.",
+      "title": "Yellow Leaf Bay Beach Day",
+      "shortDescription": "Relax on the white sands of Taniti’s most famous beach.",
+      "longDescription": "Located just outside Taniti City, Yellow Leaf Bay offers gentle waves, warm sand, and stunning sunsets. Beach chair rentals, local snack shacks, and paddleboard rentals are available.",
       "image": "images/Beach.jpeg",
-      "imageCredit": "Some Source",
-      "imageTitle": "Some Title",
-      "imageAltText": "Some alt text"
+      "imageCredit": "Photo by Taniti Tourism Board",
+      "imageTitle": "Tourists relaxing on Yellow Leaf Bay beach",
+      "imageAltText": "White sand beach with turquoise water and beachgoers"
     },
     {
-      "title": "Taniti Surf Classic",
-      "shortDescription": "Watch pro surfers take on the island’s biggest waves.",
-      "longDescription": "This annual competition brings together top talent from around the world. Food trucks, live music, and beach activities make it a must-see for visitors.",
+      "title": "Volcano Summit Hike",
+      "shortDescription": "Take a guided hike to Taniti’s active volcano.",
+      "longDescription": "Led by certified local guides, this hike to the volcanic rim offers breathtaking views and geological insights. Safety gear and refreshments are provided.",
       "image": "images/Beach.jpeg",
-      "imageCredit": "Photo by Island Times Media",
-      "imageTitle": "Pro surfers catching waves at Taniti Beach",
-      "imageAltText": "Surfers riding a large wave with spectators on the beach"
+      "imageCredit": "Taniti Parks & Rec Department",
+      "imageTitle": "Hikers approaching the rim of Taniti’s volcano",
+      "imageAltText": "Group of hikers on a trail with the volcano in the background"
     },
     {
-      "title": "Jungle Night Hike",
-      "shortDescription": "Explore the rainforest with expert guides after dark.",
-      "longDescription": "Discover Taniti’s nocturnal wildlife and experience the magic of the jungle by moonlight. Limited to 15 guests per night for an intimate adventure.",
+      "title": "Rainforest Canopy Walk",
+      "shortDescription": "Walk among the treetops in Taniti’s lush rainforest.",
+      "longDescription": "This elevated walkway offers unique perspectives on the flora and fauna of the tropical rainforest. Great for photography and bird watching.",
       "image": "images/Beach.jpeg",
-      "imageCredit": "Image courtesy of Taniti Parks & Rec",
-      "imageTitle": "Guided night hike through the rainforest",
-      "imageAltText": "Hikers walking through a moonlit jungle trail"
+      "imageCredit": "Photo by EcoTaniti Tours",
+      "imageTitle": "Suspended walkway through rainforest canopy",
+      "imageAltText": "Tourists walking on a canopy bridge above dense forest"
     },
     {
-      "title": "Volcano Vista Point",
-      "shortDescription": "Take in the dramatic view of Taniti’s ancient volcano.",
-      "longDescription": "An easily accessible lookout offers panoramic views of the island’s iconic volcano. Perfect for photos at sunrise or sunset.",
-      "image": "images/Beach.jpg",
-      "imageCredit": "Taniti Geological Survey",
-      "imageTitle": "View from the volcano lookout",
-      "imageAltText": "A volcano with a scenic view platform overlooking it"
+      "title": "Cultural Tour of Taniti City",
+      "shortDescription": "Experience native architecture and island traditions.",
+      "longDescription": "This walking tour showcases historic Tanitian buildings, traditional crafts, and local storytelling. Includes stops at artisan markets and historic sites.",
+      "image": "images/Beach.jpeg",
+      "imageCredit": "Taniti Historical Society",
+      "imageTitle": "Guided tour through Taniti City’s cultural district",
+      "imageAltText": "Tour group walking past native-style architecture and shops"
+    },
+    {
+      "title": "Sunset Harbor Cruise",
+      "shortDescription": "Sail through Taniti’s tranquil harbor at sunset.",
+      "longDescription": "Enjoy island music, tropical drinks, and dolphin sightings on this relaxing evening cruise. Great for families and couples.",
+      "image": "images/Beach.jpeg",
+      "imageCredit": "Image courtesy of Taniti Cruises",
+      "imageTitle": "Boat sailing into the sunset near Taniti harbor",
+      "imageAltText": "Catamaran with people enjoying the sunset on open water"
     }
   ]
   
