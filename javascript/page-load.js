@@ -80,7 +80,7 @@ async function renderAllTeaserSections() {
   }
 }
 async function renderAllCarousels() {
-  const sections = document.querySelectorAll(".carousel-teaser");
+  const sections = document.querySelectorAll("carousel-teasers");
 
   sections.forEach((section) => {
     const dataSrc = section.dataset.src;
