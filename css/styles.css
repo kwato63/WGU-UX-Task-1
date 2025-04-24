@@ -10,6 +10,16 @@ body {
   color: #333;
 }
 
+/* ------- */
+/* General */
+/* ------- */
+
+
+/* ------- */
+/* Footer Section */
+/* ------- */
+
+
 footer {
   background-color: #264653;
   color: white;
@@ -17,13 +27,24 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
 footer nav ul {
   list-style: none;
-  display: flex;           
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   gap: 1rem;
   padding: 0;
   margin-top: 0.5rem;
+}
+
+footer nav ul li::after {
+  content: "|";
+  margin: 0 0.5rem;
+  color: white;
+}
+
+footer nav ul li:last-child::after {
+  content: "";
 }
 
 footer nav a {
@@ -32,7 +53,7 @@ footer nav a {
 }
 
 /* ------- */
-/* General */
+/* Footer Section */
 /* ------- */
 
 /* --------------- */
