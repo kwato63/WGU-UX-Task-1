@@ -44,15 +44,17 @@
         <h2>Island Events</h2>
 
         <div class="teaser-left">
-          <h3>Event Name</h3>
-          <p>
-            <img class="teaser-image" src="images/Beach.jpeg" />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-            necessitatibus deserunt, expedita asperiores harum dolorum est
-            officia quam non impedit quasi deleniti modi quia soluta dolores
-            eos, dolore beatae dolorem.
-          </p>
-          <a href="#">Read More</a>
+          <img class="teaser-image" src="images/Beach.jpeg" />
+          <div>
+            <h3>Event Name</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
+              necessitatibus deserunt, expedita asperiores harum dolorum est
+              officia quam non impedit quasi deleniti modi quia soluta dolores
+              eos, dolore beatae dolorem.
+            </p>
+            <a href="#">Read More</a>
+          </div>
         </div>
         <div class="teaser-right">
           <h3>Event Name</h3>
@@ -65,8 +67,6 @@
           </p>
           <a href="#">Read More</a>
         </div>
-
-
       </section>
     </main>
 
@@ -75,15 +75,17 @@
     </footer>
 
     <script>
-      fetch("components/header.html")
-        .then((res) => res.text())
-        .then((data) => {
-          const headerContainer = document.getElementById("header-container");
-          if (!headerContainer) {
-            console.log("Missing Header Container");
-          }
-          document.getElementById("header-container").innerHTML = data;
-        });
+      async function fetchHeader() {
+        fetch("components/header.html")
+          .then((res) => res.text())
+          .then((data) => {
+            const headerContainer = document.getElementById("header-container");
+            if (!headerContainer) {
+              console.log("Missing Header Container");
+            }
+            document.getElementById("header-container").innerHTML = data;
+          });
+      }
       async function fetchHero() {
         fetch("components/hero.html")
           .then((res) => res.text())
@@ -103,37 +105,67 @@
             text.textContent = heroText;
           });
       }
-      async function loadAndRenderTeasers(jsonPath) {
-        try {
-          const res = await fetch(jsonPath);
-          if (!res.ok) throw new Error(`Failed to fetch: ${res.statusText}`);
 
-          const events = await res.json();
-          const teaserSection = document.querySelector(".teasers");
+      async function renderAllTeaserSections() {
+        const sections = document.querySelectorAll("section.teasers[data-src]");
 
-          events.forEach((event, index) => {
-            const teaser = document.createElement("div");
-            teaser.classList.add("teaser");
+        for (const section of sections) {
+          const jsonPath = section.dataset.src;
 
-            const imgClass = index % 2 === 0 ? "teaser-left" : "teaser-right";
+          try {
+            const res = await fetch(jsonPath);
+            if (!res.ok)
+              throw new Error(`Failed to fetch ${jsonPath}: ${res.statusText}`);
 
-            teaser.innerHTML = `
-          <h3>${event.title}</h3>
-          <p>
-            <img class="${imgClass}" src="${event.image}" alt="${event.title}" />
-            ${event.shortDescription}
-          </p>
-          <a href="#" onclick="alert(\`${event.longDescription}\`); return false;">Read More</a>
-        `;
+            const events = await res.json();
 
-            teaserSection.appendChild(teaser);
-          });
-        } catch (err) {
-          console.error("Error loading teasers:", err);
+            events.forEach((event, index) => {
+              const wrapper = document.createElement("div");
+              wrapper.className =
+                index % 2 === 0 ? "teaser-left" : "teaser-right";
+
+              const img = document.createElement("img");
+              img.className = "teaser-image";
+              img.src = event.image;
+              img.alt = event.title;
+
+              const content = document.createElement("div");
+
+              const title = document.createElement("h3");
+              title.textContent = event.title;
+
+              const desc = document.createElement("p");
+              desc.textContent = event.shortDescription;
+
+              const link = document.createElement("a");
+              link.href = "#";
+              link.textContent = "Read More";
+              link.onclick = (e) => {
+                e.preventDefault();
+                alert(event.longDescription);
+              };
+
+              content.appendChild(title);
+              content.appendChild(desc);
+              content.appendChild(link);
+
+              wrapper.appendChild(img);
+              wrapper.appendChild(content);
+
+              section.appendChild(wrapper);
+            });
+          } catch (err) {
+            console.error("Error rendering teaser section:", err);
+          }
         }
       }
-      loadAndRenderTeasers("data/events.json")
-      fetchHero();
+
+      // Call the function after DOM is ready
+      document.addEventListener("DOMContentLoaded", () => {
+        fetchHeader();
+        fetchHero();
+        renderAllTeaserSections();
+      });
 
       // setInterval(showNextSlide, 4000); // Change image every 4 seconds
     </script>
