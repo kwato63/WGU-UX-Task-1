@@ -1,20 +1,6 @@
-document.body.style.visibility = 'hidden';
-document.addEventListener('DOMContentLoaded', async function() {
-  const loadingSpinner = document.getElementById('loading-spinner');
-
-  // Start loading the custom elements
-  loadingSpinner.style.visibility = 'visible';
-
-  // Wait for all custom elements to finish loading
-  const aboutSections = document.querySelectorAll('about-section');
-  
-  for (const aboutSection of aboutSections) {
-    await aboutSection.connectedCallback(); // Ensure connectedCallback is called before proceeding
-  }
-
-  // Hide the loading spinner and show the content
-  loadingSpinner.style.visibility = 'hidden';
-  document.body.style.visibility = 'visible';
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.body;
+  body.style.visibility = "visible"; 
 });
 
 class HeaderComponent extends HTMLElement {
@@ -286,4 +272,3 @@ class AboutSection extends HTMLElement {
 }
 
 customElements.define("about-section", AboutSection);
-
