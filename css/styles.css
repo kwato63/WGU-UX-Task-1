@@ -66,20 +66,25 @@ footer nav a {
 /* --------------- */
 
 site-header {
+  display: block; 
   position: sticky;
   min-height: 70px;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9); 
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
+site-header header {
+  width: 100%;
+}
+
+site-header header h1 {
   margin: 0;
 }
 
-header nav ul {
+site-header header nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -87,7 +92,7 @@ header nav ul {
   margin-top: 0.5rem;
 }
 
-header nav a {
+site-header header nav a {
   color: black;
   text-decoration: none;
 }
