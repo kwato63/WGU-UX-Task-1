@@ -115,6 +115,7 @@ hero-banner {
 .hero-banner {
   background-size: cover;
   background-position: center;
+  background-color: rgba(0, 0, 0, 25%);
   height: 60vh;
   display: flex;
   align-items: center;
