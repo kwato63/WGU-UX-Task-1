@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Taniti</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <site-header></site-header>
+    <main>
+      <hero-banner
+        data-title="Welcome!"
+        data-text="Explore Taniti today."
+      ></hero-banner>
+      <about-section
+        data-src="data/taniti.json"
+        data-title="Discover Taniti"
+      ></about-section>
+      <teaser-section
+        data-src="data/about.json"
+        data-title="Explore The Island"
+      ></teaser-section>
+      <carousel-teasers
+        data-src="data/attractions.json"
+        data-header="Things To Do On Taniti"
+      ></carousel-teasers>
+    </main>
+    <site-footer></site-footer>
+
+    <script src="javascript/page-load.js"></script>
+  </body>
+</html>
