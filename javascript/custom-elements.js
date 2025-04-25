@@ -54,11 +54,9 @@ class HeroBanner extends HTMLElement {
       console.log("HeroBanner: No image URL provided, using default.");
     }
 
-    // Set the background image style dynamically
-    this.style.backgroundImage = `url(${imageUrl})`;
-
+    // Set the background image directly in the innerHTML of the section
     this.innerHTML = `
-      <section class="hero-banner">
+      <section class="hero-banner" style="background-image: url(${imageUrl});">
         <div class="hero-content">
           <h2 id="hero-title">${title}</h2>
           <p id="hero-text">${text}</p>
