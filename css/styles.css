@@ -189,6 +189,7 @@ about-section p {
 
 teaser-section {
   display: flex;
+  flex-direction: column;
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
