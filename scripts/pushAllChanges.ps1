@@ -1,9 +1,9 @@
-# pushAllChanges.ps1
 
-# Prompt the user for a commit message
 $commitMessage = Read-Host "Enter your Git commit message"
+if ([string]::IsNullOrWhiteSpace($commitMessage)) {
+    $commitMessage = "Continuation of work"
+}
 
-# Run the Git commands
 git add *
 git commit -m "$commitMessage"
 git push
