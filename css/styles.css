@@ -66,12 +66,12 @@ footer nav a {
 /* --------------- */
 
 site-header {
-  display: block; 
+  display: block;
   position: sticky;
   min-height: 70px;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.9); 
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -161,6 +161,7 @@ about-section {
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   line-height: 1.8;
+  display: flex;
 }
 
 about-section h2 {
@@ -174,22 +175,6 @@ about-section p {
   margin-bottom: 1.25rem;
   color: #444;
   font-size: 1rem;
-}
-
-about-section .button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #0077cc;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-about-section .button:hover {
-  background-color: #005fa3;
 }
 
 /* -------------- */
@@ -276,12 +261,14 @@ carousel-teasers {
   margin: 0 auto;
   padding: 2rem;
 }
+
 carousel-teasers h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #333;
 }
+
 .carousel-container {
   position: relative;
   overflow: hidden;
