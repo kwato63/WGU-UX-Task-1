@@ -26,13 +26,13 @@ class FooterComponent extends HTMLElement {
       <footer>
         <nav>
           <ul>
-            <li><a href="lodging.html">Lodging</a>|</li>
-            <li><a href="dining.html">Dining</a>|</li>
-            <li><a href="attractions.html">Attractions</a>|</li>
-            <li><a href="entertainment.html">Events</a>|</li>
-            <li><a href="resources.html">Airfare</a>|</li>
-            <li><a href="resources.html">Transportation</a>|</li>
-            <li><a href="resources.html">Contact</a>|</li>
+            <li><a href="lodging.html">Lodging</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="entertainment.html">Events</a></li>
+            <li><a href="resources.html">Airfare</a></li>
+            <li><a href="resources.html">Transportation</a></li>
+            <li><a href="resources.html">Contact</a></li>
             <li><a href="resources.html">Common Questions</a></li>
           </ul>
         </nav>
