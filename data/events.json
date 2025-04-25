@@ -1,30 +1,54 @@
 [
     {
       "title": "Sunset Luau",
-      "shortDescription": "Experience traditional island dancing and cuisine under the stars.",
-      "longDescription": "Join us for an unforgettable evening of music, hula performances, and a buffet featuring local delicacies. Perfect for all ages and included in many resort packages.",
+      "shortDescription": "Immerse yourself in Tanitian culture with an unforgettable evening under the stars. Watch hula dancers sway to island rhythms while enjoying a buffet of traditional dishes. It’s the perfect way to end your day, with something for everyone.",
+      "details": [
+        "Held along the beach or in tropical garden settings, the Sunset Luau is a festive celebration of Taniti’s cultural heritage.",
+        "Guests are greeted with flower leis and invited to sample authentic dishes like roasted pig, taro root, and tropical fruits.",
+        "Live performances include traditional hula, fire knife dancing, and music performed by local artists.",
+        "It’s a family-friendly event that’s often included in resort packages, drawing both visitors and locals alike.",
+        "Be sure to bring your camera—the sunset views and vibrant performances make for stunning memories."
+      ],
       "image": "images/Beach.jpeg",
       "imageCredit": "Some Source",
-      "imageTitle": "Some Title",
-      "imageAltText": "Some alt text"
+      "imageTitle": "Traditional Luau under the stars",
+      "imageAltText": "Hula dancers performing at sunset during a luau event",
+      "heroTitle": "Experience the Sunset Luau",
+      "heroText": "Enjoy fire dances, traditional cuisine, and music beneath the evening sky—Taniti’s most festive tradition."
     },
     {
       "title": "Taniti Surf Classic",
-      "shortDescription": "Watch pro surfers take on the island’s biggest waves.",
-      "longDescription": "This annual competition brings together top talent from around the world. Food trucks, live music, and beach activities make it a must-see for visitors.",
+      "shortDescription": "Join the excitement as top surfers compete on Taniti’s legendary waves. The Taniti Surf Classic combines extreme sports, beach fun, and island energy for a thrilling day at the shore.",
+      "details": [
+        "The Surf Classic draws international surf champions to challenge Taniti’s renowned reef breaks.",
+        "Held every summer, the event transforms the main beach into a vibrant festival atmosphere.",
+        "Enjoy food trucks, tropical drinks, and local vendors offering handcrafted goods and surfwear.",
+        "Spectators can lounge on the sand, cheer on competitors, and participate in interactive beach games.",
+        "Evenings conclude with live music performances, bonfires, and stargazing along the coast."
+      ],
       "image": "images/Beach.jpeg",
       "imageCredit": "Photo by Island Times Media",
       "imageTitle": "Pro surfers catching waves at Taniti Beach",
-      "imageAltText": "Surfers riding a large wave with spectators on the beach"
+      "imageAltText": "Surfers riding a large wave with spectators on the beach",
+      "heroTitle": "Catch the Waves at the Taniti Surf Classic",
+      "heroText": "Surf’s up! Witness elite surfers and beachside celebrations during the island’s most electrifying event."
     },
     {
       "title": "Jungle Night Hike",
-      "shortDescription": "Explore the rainforest with expert guides after dark.",
-      "longDescription": "Discover Taniti’s nocturnal wildlife and experience the magic of the jungle by moonlight. Limited to 15 guests per night for an intimate adventure.",
+      "shortDescription": "Step into a different world as you explore the rainforest after dark. This guided night hike reveals the island’s hidden nocturnal wonders in a truly magical setting.",
+      "details": [
+        "Led by expert guides, this nighttime adventure takes guests deep into Taniti’s lush rainforest trails.",
+        "Experience the jungle by moonlight, hearing the sounds of frogs, birds, and rustling leaves all around.",
+        "Spot glowing fungi, rare insects, and even the occasional tree-dwelling marsupial under a starlit sky.",
+        "Each small group is equipped with headlamps and safety gear to ensure a safe, intimate experience.",
+        "Perfect for nature lovers and photographers looking for a unique and unforgettable island excursion."
+      ],
       "image": "images/Beach.jpeg",
       "imageCredit": "Image courtesy of Taniti Parks & Rec",
       "imageTitle": "Guided night hike through the rainforest",
-      "imageAltText": "Hikers walking through a moonlit jungle trail"
+      "imageAltText": "Hikers walking through a moonlit jungle trail",
+      "heroTitle": "Explore the Wild Side at Night",
+      "heroText": "Discover Taniti’s nocturnal beauty on a guided rainforest hike that awakens your sense of wonder."
     }
   ]
   

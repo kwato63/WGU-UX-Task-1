@@ -1,47 +1,88 @@
 [
     {
-        "title": "Taniti City",
-        "shortDescription": "Taniti City is the vibrant capital of the island, where most tourists spend their time. It features native architecture, easy access to beautiful white-sand beaches, and a walkable layout. Public transportation, shopping, and dining are all readily available here.",
-        "longDescription": "Taniti City is the heart of the island’s tourism and culture, offering a charming blend of native architectural styles and modern amenities. The city’s white sandy beaches, which wrap around Yellow Leaf Bay, attract sunbathers and swimmers from around the world. Visitors can explore on foot, thanks to its flat terrain and well-maintained sidewalks.      Public buses operate throughout the day, making it convenient to explore various parts of the city. Tourists can enjoy a range of dining experiences, from traditional Tanitian seafood dishes to American-style meals and Pan-Asian cuisine. The city also offers convenient access to grocery stores, a 24-hour convenience shop, and various lodging options, including hotels, hostels, and bed and breakfasts.      Taniti City is also a cultural hub with museums, galleries, and an active nightlife. Pubs, a microbrewery, and a new dance club offer vibrant evening entertainment. For families, there’s a movie theater, an arcade, and even a bowling alley, making the city suitable for all ages.",
-        "image": "images/Beach.jpeg",
-        "imageCredit": "Photo by Taniti Travel Bureau",
-        "imageTitle": "Evening strolls in downtown Taniti City",
-        "imageAltText": "People walking past colorful shops and cafes in Taniti City"
+      "title": "Taniti City",
+      "shortDescription": "Taniti City is the vibrant capital of the island, known for its beautiful beaches, native architecture, and walkable charm. Tourists enjoy easy access to dining, shopping, and entertainment in a lively but laid-back setting.",
+      "details": [
+        "Taniti City is the heart of the island’s tourism and culture, offering a charming blend of native architectural styles and modern amenities.",
+        "The city’s white sandy beaches, which wrap around Yellow Leaf Bay, attract sunbathers and swimmers from around the world.",
+        "Public buses operate throughout the day, making it convenient to explore various parts of the city.",
+        "Visitors can enjoy a range of dining experiences, from traditional Tanitian seafood to American-style meals and Pan-Asian cuisine.",
+        "Nightlife options include pubs, a microbrewery, a dance club, and family-friendly venues like a movie theater, arcade, and bowling alley."
+      ],
+      "image": "images/Beach.jpeg",
+      "imageCredit": "Photo by Taniti Travel Bureau",
+      "imageTitle": "Evening strolls in downtown Taniti City",
+      "imageAltText": "People walking past colorful shops and cafes in Taniti City",
+      "heroTitle": "Explore Taniti City",
+      "heroText": "Experience the heart of the island. From beach days to nightlife, discover the vibrant capital of Taniti."
     },
     {
-        "title": "Yellow Leaf Bay",
-        "shortDescription": "Yellow Leaf Bay is a stunning coastal area known for its white, sandy beaches. The bay surrounds much of Taniti City and is a popular spot for sunbathing, swimming, and boat tours. It’s also home to the island’s cruise ship harbor and the rapidly growing Merriton Landing district.",
-        "longDescription": "Yellow Leaf Bay serves as both a natural gem and an economic engine for the island. Its calm, turquoise waters and powdery beaches offer picture-perfect relaxation. The bay wraps around Taniti City, providing easy access to waterfront attractions and panoramic views of the island’s interior.      Each week, a small cruise ship docks in Yellow Leaf Bay, introducing new visitors to the island. The bay is also a launch point for boat tours that explore the island’s coastline and nearby reefs. In the north, the Merriton Landing area is rapidly developing into a hotspot for tourists, with many entertainment venues and new businesses cropping up.      Beyond its recreational appeal, the bay plays a vital role in local transportation and commerce. Charter boats, fishing tours, and water taxis operate here. With continued investment and development, Yellow Leaf Bay is expected to remain a cornerstone of Taniti’s tourism industry for years to come.",
-        "image": "images/Beach.jpeg",
-        "imageCredit": "Photo by OceanLens Media",
-        "imageTitle": "Sunset over Yellow Leaf Bay",
-        "imageAltText": "Golden light reflecting off the calm waters of Yellow Leaf Bay"
+      "title": "Yellow Leaf Bay",
+      "shortDescription": "Yellow Leaf Bay surrounds Taniti City with calm turquoise waters and pristine white sand beaches. It’s the perfect spot for swimming, boat tours, or catching a sunset by the shore.",
+      "details": [
+        "Yellow Leaf Bay serves as both a natural gem and an economic engine for the island.",
+        "Its calm waters and scenic beauty provide the perfect backdrop for relaxation and exploration.",
+        "A small cruise ship docks weekly, bringing visitors to explore the island’s coastline and reefs.",
+        "The bay is also a hub for boat tours, water taxis, and fishing excursions.",
+        "In the north, the Merriton Landing area is growing rapidly with entertainment venues and vibrant new businesses."
+      ],
+      "image": "images/Beach.jpeg",
+      "imageCredit": "Photo by OceanLens Media",
+      "imageTitle": "Sunset over Yellow Leaf Bay",
+      "imageAltText": "Golden light reflecting off the calm waters of Yellow Leaf Bay",
+      "heroTitle": "Welcome to Yellow Leaf Bay",
+      "heroText": "Turquoise waters, white sand, and endless ocean adventures await on the shores of Yellow Leaf Bay."
     },
     {
-        "title": "Merriton Landing",
-        "shortDescription": "Merriton Landing is a lively, rapidly developing area on the north side of Yellow Leaf Bay. It’s known for its entertainment venues, including pubs, galleries, and a microbrewery. The district is walkable and offers easy access to both the bay and Taniti City.",
-        "longDescription": "Merriton Landing has emerged as Taniti’s most exciting entertainment district. Located just north of Taniti City, this area blends stunning waterfront views with a buzzing nightlife and cultural scene. Visitors can stroll from one venue to the next, enjoying local music, art galleries, and unique shopping experiences.      The neighborhood is home to a number of pubs, including a popular microbrewery that serves locally crafted beverages. Visitors can enjoy live music, dance at the new club, or relax at one of the waterfront cafés. For those looking for indoor entertainment, there’s also a bowling alley, a movie theater, and an arcade for family fun.      Despite its growth, Merriton Landing retains a local feel and is easy to explore on foot. Future developments include expanded lodging and possibly a marina for private boats. As the district continues to grow, it promises to be one of the top destinations for nightlife and leisure on the island.",
-        "image": "images/Beach.jpeg",
-        "imageCredit": "Photo by Local Lens Taniti",
-        "imageTitle": "Crowds enjoying a festival in Merriton Landing",
-        "imageAltText": "Live music and food vendors along the waterfront"
+      "title": "Merriton Landing",
+      "shortDescription": "Located north of Taniti City, Merriton Landing is a lively waterfront district filled with pubs, galleries, and live entertainment. This walkable area blends local culture with modern nightlife.",
+      "details": [
+        "Merriton Landing has emerged as Taniti’s most exciting entertainment district, located just north of the capital.",
+        "Visitors can explore live music venues, unique shopping, and art galleries along the scenic waterfront.",
+        "Pubs, a microbrewery, and a popular dance club keep the nightlife buzzing well into the evening.",
+        "Family-friendly attractions like a movie theater, arcade, and bowling alley round out the offerings.",
+        "With more developments on the way, including lodging and a marina, Merriton Landing is a hotspot on the rise."
+      ],
+      "image": "images/Beach.jpeg",
+      "imageCredit": "Photo by Local Lens Taniti",
+      "imageTitle": "Crowds enjoying a festival in Merriton Landing",
+      "imageAltText": "Live music and food vendors along the waterfront",
+      "heroTitle": "Discover Merriton Landing",
+      "heroText": "A cultural crossroads of fun and flavor. Merriton Landing is Taniti’s nightlife and arts hub on the water."
     },
     {
-        "title": "Rainforest Interior",
-        "shortDescription": "Taniti’s lush tropical rainforest offers a scenic contrast to its beaches and cities. Visitors can hike through dense foliage, encounter exotic wildlife, and even zip-line through the treetops. It’s a haven for nature lovers and adventure seekers alike.",
-        "longDescription": "The rainforest interior of Taniti is a breathtaking natural area that spans the island’s mountainous center. Rich in biodiversity, the forest features towering trees, colorful birds, and winding trails that attract eco-tourists and hikers. The dense foliage and misty canopies give the area a mysterious, untouched feel.      Guided hikes take visitors through the heart of the rainforest, highlighting local flora and fauna. Zip-lining tours offer a thrilling way to experience the canopy, gliding through the treetops at breathtaking heights. This area also contains quiet streams and scenic overlooks perfect for nature photography or simply soaking in the peaceful atmosphere.      In addition to its recreational appeal, the rainforest plays an important role in Taniti’s ecosystem and cultural history. Many indigenous traditions are rooted in the land, and preservation efforts are underway to ensure sustainable tourism. For those seeking a deeper connection with nature, the rainforest interior is a must-see destination.",
-        "image": "images/Beach.jpeg",
-        "imageCredit": "Photo by Green Canopy Explorers",
-        "imageTitle": "Zip-liners flying through the rainforest",
-        "imageAltText": "People zip-lining over a dense green canopy"
+      "title": "Rainforest Interior",
+      "shortDescription": "Taniti’s lush rainforest offers a peaceful escape filled with exotic wildlife and adventure. Hike beneath the canopy, zip-line above the trees, or simply enjoy the natural beauty.",
+      "details": [
+        "The rainforest interior spans the island’s mountainous center and is rich in biodiversity and natural wonder.",
+        "Towering trees, vibrant birds, and misty trails create a serene atmosphere for eco-tourists and hikers.",
+        "Guided hikes and zip-line tours offer immersive ways to explore the forest from the ground or above the canopy.",
+        "Quiet streams, hidden waterfalls, and scenic overlooks provide perfect spots for photography or reflection.",
+        "Many local traditions are tied to this region, and ongoing preservation efforts ensure sustainable tourism."
+      ],
+      "image": "images/Beach.jpeg",
+      "imageCredit": "Photo by Green Canopy Explorers",
+      "imageTitle": "Zip-liners flying through the rainforest",
+      "imageAltText": "People zip-lining over a dense green canopy",
+      "heroTitle": "Journey into the Rainforest",
+      "heroText": "Nature lovers and thrill seekers unite. Discover Taniti’s wild heart in its rainforest interior."
     },
     {
-        "title": "Volcanic Highlands",
-        "shortDescription": "The Volcanic Highlands are home to Taniti’s small, active volcano. This dramatic landscape offers guided tours, panoramic views, and geological wonders. It’s a popular day trip for adventurous visitors.",
-        "longDescription": "Towering above the rainforest, the Volcanic Highlands provide one of the most striking natural features on the island. The area is dominated by a small but active volcano, which occasionally emits steam and gas, adding to its mystique. Visitors can hike along well-marked trails to reach viewpoints that offer sweeping vistas of the island and ocean beyond.      Volcano tours are a major attraction and are carefully regulated for safety. Guides share the geological history of the island and explain how the volcano shaped Taniti’s terrain. Interpretive signs and lookout platforms provide educational experiences for all ages, while the challenging hikes attract adventure travelers.      Despite its rugged terrain, the Volcanic Highlands are surprisingly accessible from Taniti City via chartered buses. Plans are in motion to expand visitor facilities without compromising the natural beauty of the region. For those eager to explore the forces that shaped the island, this area offers a once-in-a-lifetime experience.",
-        "image": "images/Beach.jpeg",
-        "imageCredit": "Photo by Firepath Guides",
-        "imageTitle": "Steaming crater in the Taniti Highlands",
-        "imageAltText": "A volcanic crater surrounded by dark rock and mist"
+      "title": "Volcanic Highlands",
+      "shortDescription": "The Volcanic Highlands offer breathtaking views and a glimpse of Taniti’s geological past. Home to a small active volcano, this rugged area draws hikers, explorers, and curious visitors.",
+      "details": [
+        "Towering above the rainforest, the Volcanic Highlands are defined by dramatic terrain and an active volcano.",
+        "Visitors can explore scenic trails, steaming vents, and panoramic viewpoints with guided tours available.",
+        "Interpretive signs along the way share the volcanic history and geological evolution of Taniti Island.",
+        "Lookout platforms offer spectacular views of the surrounding rainforest and ocean beyond.",
+        "The area is accessible via chartered buses and is expected to see expanded facilities to accommodate more visitors."
+      ],
+      "image": "images/Beach.jpeg",
+      "imageCredit": "Photo by Firepath Guides",
+      "imageTitle": "Steaming crater in the Taniti Highlands",
+      "imageAltText": "A volcanic crater surrounded by dark rock and mist",
+      "heroTitle": "Explore the Volcanic Highlands",
+      "heroText": "Adventure to the island’s summit and witness the raw beauty of Taniti’s volcanic landscape."
     }
-]
+  ]
+  

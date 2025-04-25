@@ -1,39 +1,70 @@
 [
-    {
-      "title": "The Coconut Grill",
-      "shortDescription": "Casual beachfront dining with island-style BBQ.",
-      "longDescription": "Grab a table in the sand and enjoy grilled seafood, pork skewers, and fresh coconut drinks with live ukulele music nightly.",
-      "image": "images/Beach.jpeg",
-      "imageCredit": "Taniti Eats Blog",
-      "imageTitle": "Beachfront dining at The Coconut Grill",
-      "imageAltText": "Outdoor tables on the beach with a grill and ocean in background"
-    },
-    {
-      "title": "Mango Grove",
-      "shortDescription": "Farm-to-table dining in a lush garden setting.",
-      "longDescription": "Seasonal menus highlight locally grown fruits, vegetables, and fish. A serene and scenic spot for romantic dinners.",
-      "image": "images/Beach.jpeg",
-      "imageCredit": "Photo by Taste Taniti",
-      "imageTitle": "Mango Grove Restaurant garden patio",
-      "imageAltText": "Outdoor garden restaurant with hanging lights"
-    },
-    {
-      "title": "Tiki Tapas Bar",
-      "shortDescription": "Shareable plates, tropical cocktails, and sunset views.",
-      "longDescription": "Sip handcrafted drinks and try unique island tapas while watching the sun set over the bay. Popular with locals and tourists alike.",
-      "image": "images/Beach.jpeg",
-      "imageCredit": "Taniti Lifestyle Magazine",
-      "imageTitle": "Tiki Tapas patio at sunset",
-      "imageAltText": "Cocktail bar with tapas plates and tiki torches at dusk"
-    },
-    {
-      "title": "Volcano Pizza",
-      "shortDescription": "Wood-fired pizza with a tropical twist.",
-      "longDescription": "Famous for its pineapple-habanero sauce and taro crust options, Volcano Pizza brings the heat and the flavor.",
-      "image": "images/Beach.jpeg",
-      "imageCredit": "Photo courtesy of Volcano Pizza",
-      "imageTitle": "Chef placing pizza in a wood-fired oven",
-      "imageAltText": "Wood-fired pizza oven and tropical toppings"
-    }
-  ]
-  
+  {
+    "title": "The Coconut Grill",
+    "shortDescription": "Enjoy laid-back beachfront dining with a local twist. The Coconut Grill offers a friendly, sand-between-your-toes atmosphere and island-style BBQ perfect for families or couples. Savor fresh grilled seafood and tropical drinks while you watch the waves roll in.",
+    "details": [
+      "The Coconut Grill is one of Taniti’s most iconic casual eateries, set directly on the beach with palm trees overhead and tiki torches at dusk.",
+      "The menu focuses on grilled seafood, pork skewers, and sides like coconut rice and papaya slaw. Signature drinks include chilled coconut juice served straight from the shell.",
+      "Each evening features live ukulele performances from local musicians, making for a uniquely Tanitian experience that blends flavor and island culture.",
+      "Perfect for those looking to unwind after a beach day or catch the sunset with a cocktail in hand.",
+      "Reservations aren’t required, but sunset hours can get busy — arrive early to snag a table in the sand!"
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "Taniti Eats Blog",
+    "imageTitle": "Beachfront dining at The Coconut Grill",
+    "imageAltText": "Outdoor tables on the beach with a grill and ocean in background",
+    "heroTitle": "Island BBQ by the Shore",
+    "heroText": "Kick off your flip-flops and grab a seat in the sand — Coconut Grill is where flavor meets the waves."
+  },
+  {
+    "title": "Mango Grove",
+    "shortDescription": "Surrounded by lush greenery and glowing string lights, Mango Grove brings the garden-to-table movement to Taniti. Enjoy creative dishes made with the freshest local ingredients, perfect for romantic evenings or mindful foodies.",
+    "details": [
+      "Tucked away in a quiet tropical garden, Mango Grove offers an immersive outdoor dining experience with nature as your backdrop.",
+      "The restaurant sources ingredients from nearby farms and fishing boats, emphasizing seasonal produce and sustainable practices.",
+      "Dishes rotate weekly but may include passionfruit-glazed snapper, taro gnocchi, and mango panna cotta. All meals are beautifully plated and artfully crafted.",
+      "Ideal for couples seeking a quiet, romantic evening or anyone looking for a slower, more intentional dining moment.",
+      "Evenings are lit by soft lanterns and accompanied by the gentle sounds of birds and breezes through the trees."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "Photo by Taste Taniti",
+    "imageTitle": "Mango Grove Restaurant garden patio",
+    "imageAltText": "Outdoor garden restaurant with hanging lights",
+    "heroTitle": "Garden Dining, Elevated",
+    "heroText": "Dine beneath the stars and among the trees with fresh, locally inspired cuisine at Mango Grove."
+  },
+  {
+    "title": "Tiki Tapas Bar",
+    "shortDescription": "This lively bar is the place to share small plates and stories. Tiki Tapas blends island flavors with global inspiration, all served with colorful cocktails and unbeatable sunset views.",
+    "details": [
+      "Perched on a low bluff overlooking the bay, Tiki Tapas Bar offers panoramic views and laid-back energy — especially as the sun begins to dip.",
+      "The tapas menu includes island-infused bites like coconut curry empanadas, fried plantains with habanero aioli, and mango shrimp skewers.",
+      "Craft cocktails, served in coconuts or adorned with edible flowers, are a major draw, along with local craft beers and infused rums.",
+      "Tiki torches line the patio, and live DJs or small bands often play tropical house or reggae during happy hour.",
+      "Great for groups, social travelers, or anyone craving flavor and fun as the day winds down."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "Taniti Lifestyle Magazine",
+    "imageTitle": "Tiki Tapas patio at sunset",
+    "imageAltText": "Cocktail bar with tapas plates and tiki torches at dusk",
+    "heroTitle": "Tapas at Twilight",
+    "heroText": "From tropical bites to sunset sips, Tiki Tapas Bar is Taniti's go-to for good vibes and better views."
+  },
+  {
+    "title": "Volcano Pizza",
+    "shortDescription": "A bold take on a comfort food classic. Volcano Pizza delivers blazing flavor combinations with its signature wood-fired oven and tropical toppings like taro crust and pineapple-habanero sauce.",
+    "details": [
+      "Located near the market square, Volcano Pizza is a must-visit for pizza lovers looking to try something totally new.",
+      "The restaurant’s custom-built oven reaches volcanic temperatures, producing a perfect crisp crust with a hint of smokiness.",
+      "Unusual topping combos include jerk chicken with grilled mango, smoked fish with lime crema, and a surprisingly popular jackfruit & jalapeño pie.",
+      "Taro root crust is a gluten-free favorite, and vegan cheese options are available for all pies.",
+      "Expect a lively, casual space filled with laughter, the scent of wood smoke, and the sight of pizzas flying from oven to plate in seconds."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "Photo courtesy of Volcano Pizza",
+    "imageTitle": "Chef placing pizza in a wood-fired oven",
+    "imageAltText": "Wood-fired pizza oven and tropical toppings",
+    "heroTitle": "Where Flavor Erupts",
+    "heroText": "At Volcano Pizza, bold flavors and blazing ovens create an island take on everyone’s favorite dish."
+  }
+]

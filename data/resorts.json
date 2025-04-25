@@ -1,30 +1,50 @@
 [
-    {
-      "title": "Taniti Grand Resort",
-      "shortDescription": "A luxurious beachfront resort with world-class amenities.",
-      "longDescription": "Enjoy ocean-view suites, infinity pools, private cabanas, and fine dining at the Taniti Grand Resort, just steps from the shore.",
-      "image": "images/Beach.jpeg",
-      "imageCredit": "Taniti Tourism Bureau",
-      "imageTitle": "Taniti Grand Resort by the beach",
-      "imageAltText": "Elegant resort facing the ocean with palm trees"
-    },
-    {
-      "title": "Mountainview Retreat",
-      "shortDescription": "Nestled in the hills with panoramic island views.",
-      "longDescription": "This peaceful escape offers spa treatments, yoga classes, and gourmet plant-based cuisine. Perfect for couples and wellness travelers.",
-      "image": "images/Beach.jpeg",
-      "imageCredit": "Mountainview Press Kit",
-      "imageTitle": "Retreat in the hills of Taniti",
-      "imageAltText": "Lush hillside resort with spa and scenic overlook"
-    },
-    {
-      "title": "Lagoon Bungalows",
-      "shortDescription": "Sleep above the water in private overwater bungalows.",
-      "longDescription": "Each bungalow features a glass floor panel, private deck, and direct lagoon access. Ideal for honeymoons or bucket-list trips.",
-      "image": "images/Beach.jpeg",
-      "imageCredit": "Island Stay Magazine",
-      "imageTitle": "Overwater bungalows at Taniti Lagoon",
-      "imageAltText": "Thatched-roof bungalows on stilts over turquoise water"
-    }
-  ]
-  
+  {
+    "title": "Taniti Grand Resort",
+    "shortDescription": "A luxurious beachfront resort with world-class amenities. Wake up to the sound of the waves and enjoy exclusive access to Taniti's pristine shoreline. From infinity pools to fine dining, every detail is designed for comfort and indulgence.",
+    "details": [
+      "Enjoy ocean-view suites designed with modern elegance and local flair, offering the perfect blend of comfort and island charm.",
+      "Spend your afternoons lounging by the infinity pools or relaxing in private cabanas surrounded by swaying palms and ocean breezes.",
+      "Dine at our award-winning restaurants featuring fresh seafood, international cuisine, and tropical cocktails.",
+      "The resort is just steps from the shore and offers beachside service, water sports, and sunset views that take your breath away."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "Taniti Tourism Bureau",
+    "imageTitle": "Taniti Grand Resort by the beach",
+    "imageAltText": "Elegant resort facing the ocean with palm trees",
+    "heroTitle": "Experience Beachfront Luxury",
+    "heroText": "Relax in ocean-view suites and savor world-class dining at Taniti’s most luxurious seaside resort."
+  },
+  {
+    "title": "Mountainview Retreat",
+    "shortDescription": "Nestled in the hills with panoramic views of Taniti’s natural beauty. This serene escape is ideal for those seeking rejuvenation through wellness, nature, and tranquility.",
+    "details": [
+      "Find peace among the treetops at this hillside retreat offering spa treatments and natural hot spring baths.",
+      "Unwind with daily yoga classes held at sunrise and sunset, accompanied by mountain breezes and birdsong.",
+      "Enjoy gourmet plant-based meals prepared with locally sourced ingredients, perfect for wellness-focused travelers.",
+      "Designed with eco-conscious materials and practices, the retreat blends seamlessly with the lush island landscape."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "Mountainview Press Kit",
+    "imageTitle": "Retreat in the hills of Taniti",
+    "imageAltText": "Lush hillside resort with spa and scenic overlook",
+    "heroTitle": "Rejuvenate in the Hills",
+    "heroText": "Escape to a peaceful sanctuary where wellness meets wilderness in Taniti’s breathtaking mountain hideaway."
+  },
+  {
+    "title": "Lagoon Bungalows",
+    "shortDescription": "Sleep above the water in private overwater bungalows. With glass floor panels and uninterrupted lagoon views, each stay promises a magical island experience.",
+    "details": [
+      "Each bungalow features a private deck with direct access to the crystal-clear lagoon for swimming or snorkeling.",
+      "Watch fish swim beneath your feet through in-room glass floor panels, a signature feature of the Lagoon Bungalows.",
+      "Perfect for romantic getaways, honeymoons, or anyone seeking tranquility on the water.",
+      "Guests enjoy in-room breakfast delivery, sunset cocktails, and starlit evenings surrounded by gentle waves."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "Island Stay Magazine",
+    "imageTitle": "Overwater bungalows at Taniti Lagoon",
+    "imageAltText": "Thatched-roof bungalows on stilts over turquoise water",
+    "heroTitle": "Sleep Above the Sea",
+    "heroText": "Drift into paradise in Taniti’s iconic overwater bungalows, where serenity and scenery meet in perfect harmony."
+  }
+]
