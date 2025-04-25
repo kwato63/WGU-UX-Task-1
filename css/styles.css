@@ -262,6 +262,7 @@ teaser-section a:hover {
 
 carousel-teasers {
   display: flex;
+  flex-direction: column;
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
