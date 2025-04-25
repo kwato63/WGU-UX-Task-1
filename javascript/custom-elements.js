@@ -125,7 +125,9 @@ class CarouselTeasers extends HTMLElement {
     const dataSrc = this.dataset.src;
     const headerText = this.dataset.header;
     if (!dataSrc || !headerText) {
-      console.log("CarouselTeasers: Missing 'src' or 'header' data attributes.");
+      console.log(
+        "CarouselTeasers: Missing 'src' or 'header' data attributes."
+      );
       return;
     }
 
@@ -194,7 +196,10 @@ class CarouselTeasers extends HTMLElement {
         showSlide(currentIndex);
       });
     } catch (err) {
-      console.error(`CarouselTeasers: Failed to load carousel data from ${dataSrc}:`, err);
+      console.error(
+        `CarouselTeasers: Failed to load carousel data from ${dataSrc}:`,
+        err
+      );
     }
   }
 }
@@ -214,22 +219,38 @@ class AboutSection extends HTMLElement {
       const data = await res.json();
       const matchedItem = data.find((item) => item.title === dataTitle);
       if (!matchedItem) {
-        console.log(`AboutSection: No matching item found for title "${dataTitle}".`);
+        console.log(
+          `AboutSection: No matching item found for title "${dataTitle}".`
+        );
         return;
       }
 
-      this.innerHTML = "";
+      this.innerHTML = ""; // Clear any previous content
 
       const titleEl = document.createElement("h2");
       titleEl.textContent = matchedItem.title;
       this.appendChild(titleEl);
-
-      const para = document.createElement("p");
-      para.textContent = matchedItem.longDescription;
-      this.appendChild(para);
+      const details = matchedItem.details;
+      if (Array.isArray(details)) {
+        details.forEach((paraText) => {
+          const para = document.createElement("p");
+          para.textContent = paraText; // If you're inserting plain text
+          this.appendChild(para);
+        });
+      } else if (typeof details === "string") {
+        const para = document.createElement("p");
+        para.textContent = details; // If you're inserting plain text
+        this.appendChild(para);
+      } else {
+        console.log(`AboutSection: 'details' is not an array or a string in the data.`);
+      }
     } catch (err) {
-      console.error(`AboutSection: Failed to load about section from ${dataSrc}:`, err);
+      console.error(
+        `AboutSection: Failed to load about section from ${dataSrc}:`,
+        err
+      );
     }
   }
 }
+
 customElements.define("about-section", AboutSection);
