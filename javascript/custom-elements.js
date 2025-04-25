@@ -44,25 +44,36 @@ class FooterComponent extends HTMLElement {
 customElements.define("site-footer", FooterComponent);
 
 class HeroBanner extends HTMLElement {
-  connectedCallback() {
-    const title = this.dataset.title || "Welcome to Taniti Island";
-    const text = this.dataset.text || "A beautiful destination awaits you.";
-    const imageUrl = this.dataset.image || "images/Beach.jpeg"; // Default image if none is provided
-
-    // Log missing image URL
-    if (!this.dataset.image) {
-      console.log("HeroBanner: No image URL provided, using default.");
+  async connectedCallback() {
+    const dataSrc = this.dataset.src;
+    const dataTitle = this.dataset.title;
+    if (!dataSrc || !dataTitle) {
+      console.log("AboutSection: Missing 'src' or 'title' data attributes.");
+      return;
     }
 
-    // Set the background image directly in the innerHTML of the section
-    this.innerHTML = `
-      <section class="hero-banner" style="background-image: url(${imageUrl});">
+    try {
+      const res = await fetch(dataSrc);
+      const data = await res.json();
+      const matchedItem = data.find((item) => item.title === dataTitle);
+      if (!matchedItem) {
+        console.log(
+          `AboutSection: No matching item found for title "${dataTitle}".`
+        );
+        return;
+      }
+
+      this.innerHTML = `
+      <section class="hero-banner" style="background-image: url(${matchedItem.image});">
         <div class="hero-content">
-          <h2 id="hero-title">${title}</h2>
-          <p id="hero-text">${text}</p>
+          <h2 id="hero-title">${matchedItem.heroTitle}</h2>
+          <p id="hero-text">${matchedItem.heroText}</p>
         </div>
       </section>
     `;
+    } catch (err) {
+      console.error("HeroBanner: Error rendering hero banner:", err);
+    }
   }
 }
 customElements.define("hero-banner", HeroBanner);
@@ -242,7 +253,9 @@ class AboutSection extends HTMLElement {
         para.textContent = details; // If you're inserting plain text
         this.appendChild(para);
       } else {
-        console.log(`AboutSection: 'details' is not an array or a string in the data.`);
+        console.log(
+          `AboutSection: 'details' is not an array or a string in the data.`
+        );
       }
     } catch (err) {
       console.error(
