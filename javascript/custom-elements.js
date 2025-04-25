@@ -93,33 +93,35 @@ class TeaserSection extends HTMLElement {
 
     try {
       const res = await fetch(jsonPath);
-      const events = await res.json();
+      const items = await res.json();
 
-      if (events.length === 0) {
-        console.log("TeaserSection: No events found in the provided JSON.");
+      if (items.length === 0) {
+        console.log("TeaserSection: No items found in the provided JSON.");
       }
 
-      events.forEach((event, index) => {
+      items.forEach((item, index) => {
         const teaserWrapper = document.createElement("div");
         teaserWrapper.classList.add(
           "teaser",
           index % 2 === 0 ? "teaser-left" : "teaser-right"
         );
+        const srcParam = encodeURIComponent(
+          jsonPath.replace(/^data\//, "").replace(/\.json$/, "")
+        );
+        const titleParam = encodeURIComponent(item.title);
         teaserWrapper.innerHTML = `
-          <img class="teaser-image" src="${event.image}" title="${
-          event.imageTitle || ""
-        }" alt="${event.imageAltText || ""}" />
+          <img class="teaser-image" src="${item.image}" title="${
+          item.imageTitle || ""
+        }" alt="${item.imageAltText || ""}" />
           <div>
-            <h3>${event.title}</h3>
-            <p>${event.shortDescription}</p>
-            <a href="#" onclick="alert('${
-              event.longDescription
-            }'); return false;">Read More</a>
-            ${
-              event.imageCredit
-                ? `<p class="image-credit">Image Credit: ${event.imageCredit}</p>`
-                : ""
-            }
+            <h3>${item.title}</h3>
+            <p>${item.shortDescription}</p>
+            <a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>
+           ${
+             item.imageCredit
+               ? `<p class="image-credit">Image Credit: ${item.imageCredit}</p>`
+               : ""
+           }
           </div>
         `;
         this.appendChild(teaserWrapper);
