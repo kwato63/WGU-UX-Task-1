@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const body = document.body;
-  body.style.visibility = "visible"; 
-});
-
 class HeaderComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
