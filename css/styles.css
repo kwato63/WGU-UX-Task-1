@@ -107,6 +107,7 @@ site-header header nav a {
 /* ------------- */
 
 hero-banner {
+  display: flex;
   height: 60vh;
 }
 
