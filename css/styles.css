@@ -105,7 +105,6 @@ hero-banner {
 }
 
 .hero-banner {
-  background-image: var(--hero-image);
   background-size: cover;
   background-position: center;
   height: 60vh;

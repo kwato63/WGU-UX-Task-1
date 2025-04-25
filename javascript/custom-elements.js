@@ -47,6 +47,15 @@ class HeroBanner extends HTMLElement {
   connectedCallback() {
     const title = this.dataset.title || "Welcome to Taniti Island";
     const text = this.dataset.text || "A beautiful destination awaits you.";
+    const imageUrl = this.dataset.image || "images/Beach.jpeg"; // Default image if none is provided
+
+    // Log missing image URL
+    if (!this.dataset.image) {
+      console.log("HeroBanner: No image URL provided, using default.");
+    }
+
+    // Set the background image style dynamically
+    this.style.backgroundImage = `url(${imageUrl})`;
 
     this.innerHTML = `
       <section class="hero-banner">
@@ -64,6 +73,11 @@ class TeaserSection extends HTMLElement {
   async connectedCallback() {
     const jsonPath = this.dataset.src;
     const headerText = this.dataset.header;
+    if (!jsonPath || !headerText) {
+      console.log("TeaserSection: Missing 'src' or 'header' data attributes.");
+      return;
+    }
+
     const header = document.createElement("h2");
     header.textContent = headerText;
     this.appendChild(header);
@@ -71,6 +85,10 @@ class TeaserSection extends HTMLElement {
     try {
       const res = await fetch(jsonPath);
       const events = await res.json();
+
+      if (events.length === 0) {
+        console.log("TeaserSection: No events found in the provided JSON.");
+      }
 
       events.forEach((event, index) => {
         const teaserWrapper = document.createElement("div");
@@ -98,7 +116,7 @@ class TeaserSection extends HTMLElement {
         this.appendChild(teaserWrapper);
       });
     } catch (err) {
-      console.error("Error rendering teaser section:", err);
+      console.error("TeaserSection: Error rendering teaser section:", err);
     }
   }
 }
@@ -108,11 +126,18 @@ class CarouselTeasers extends HTMLElement {
   async connectedCallback() {
     const dataSrc = this.dataset.src;
     const headerText = this.dataset.header;
-    if (!dataSrc) return;
+    if (!dataSrc || !headerText) {
+      console.log("CarouselTeasers: Missing 'src' or 'header' data attributes.");
+      return;
+    }
 
     try {
       const res = await fetch(dataSrc);
       const data = await res.json();
+
+      if (data.length === 0) {
+        console.log("CarouselTeasers: No data found in the provided JSON.");
+      }
 
       const header = document.createElement("h2");
       header.textContent = headerText;
@@ -171,7 +196,7 @@ class CarouselTeasers extends HTMLElement {
         showSlide(currentIndex);
       });
     } catch (err) {
-      console.error(`Failed to load carousel data from ${dataSrc}:`, err);
+      console.error(`CarouselTeasers: Failed to load carousel data from ${dataSrc}:`, err);
     }
   }
 }
@@ -181,13 +206,19 @@ class AboutSection extends HTMLElement {
   async connectedCallback() {
     const dataSrc = this.dataset.src;
     const dataTitle = this.dataset.title;
-    if (!dataSrc || !dataTitle) return;
+    if (!dataSrc || !dataTitle) {
+      console.log("AboutSection: Missing 'src' or 'title' data attributes.");
+      return;
+    }
 
     try {
       const res = await fetch(dataSrc);
       const data = await res.json();
       const matchedItem = data.find((item) => item.title === dataTitle);
-      if (!matchedItem) return;
+      if (!matchedItem) {
+        console.log(`AboutSection: No matching item found for title "${dataTitle}".`);
+        return;
+      }
 
       this.innerHTML = "";
 
@@ -199,7 +230,7 @@ class AboutSection extends HTMLElement {
       para.textContent = matchedItem.longDescription;
       this.appendChild(para);
     } catch (err) {
-      console.error(`Failed to load about section from ${dataSrc}:`, err);
+      console.error(`AboutSection: Failed to load about section from ${dataSrc}:`, err);
     }
   }
 }
