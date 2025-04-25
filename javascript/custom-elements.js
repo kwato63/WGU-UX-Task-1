@@ -174,11 +174,17 @@ class CarouselTeasers extends HTMLElement {
         const slide = document.createElement("div");
         slide.classList.add("carousel-slide");
         if (i === 0) slide.classList.add("active");
+        
+        const srcParam = encodeURIComponent(
+          dataSrc.replace(/^data\//, "").replace(/\.json$/, "")
+        );
+        const titleParam = encodeURIComponent(item.title);
         slide.innerHTML = `
           <div class="carousel-image" style="background-image: url('${item.image}');" role="img" aria-label="${item.imageAltText}"></div>
           <div class="carousel-content">
             <h3>${item.title}</h3>
             <p>${item.shortDescription}</p>
+            <a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>
             <small class="image-credit">${item.imageCredit}</small>
           </div>
         `;
