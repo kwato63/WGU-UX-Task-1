@@ -388,8 +388,7 @@ carousel-teasers h2 {
 /* ----------------------- */
 /* Gallery Teaser Sections */
 /* ----------------------- */
-
-.gallery-teaser {
+gallery-teaser {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -402,70 +401,97 @@ carousel-teasers h2 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-teaser-title {
+gallery-teaser h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #2c3e50;
 }
 
-.gallery-teaser-short-description {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #555;
-}
-
-.gallery-teaser-image {
+gallery-teaser .gallery-container {
+  position: relative;
   width: 100%;
-  max-height: 400px;
   overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 1.5rem;
 }
 
-.gallery-teaser-image img {
+gallery-teaser .gallery-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Each card */
+gallery-teaser .gallery-card {
+  flex: 0 0 calc(100% / 3);
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: left;
+}
+
+gallery-teaser .gallery-image {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  padding-top: 56.25%;
+  /* 16:9 aspect ratio */
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
-.gallery-teaser-hero {
-  background-color: #f0f8ff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin-top: 2rem;
-}
-
-.gallery-teaser-hero-title {
+gallery-teaser .gallery-content h3 {
   font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   color: #0077b6;
 }
 
-.gallery-teaser-hero-text {
+gallery-teaser .gallery-content p {
   font-size: 1rem;
   color: #333;
-}
-
-.gallery-teaser-details {
-  margin-top: 2rem;
-  text-align: left;
-  padding-left: 1rem;
-}
-
-.gallery-teaser-details li {
   margin-bottom: 0.75rem;
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.5;
 }
 
-.gallery-teaser-image-credit {
+gallery-teaser .gallery-content a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+gallery-teaser .gallery-content a:hover {
+  text-decoration: underline;
+}
+
+gallery-teaser .gallery-content .image-credit {
+  display: block;
   font-size: 0.85rem;
   color: #777;
   margin-top: 0.5rem;
+}
+
+gallery-teaser .gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+gallery-teaser .gallery-btn.left {
+  left: 10px;
+}
+
+gallery-teaser .gallery-btn.right {
+  right: 10px;
+}
+
+gallery-teaser .gallery-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* ----------------------- */
