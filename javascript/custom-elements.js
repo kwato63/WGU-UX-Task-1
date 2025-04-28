@@ -548,7 +548,7 @@ function build_bottom_display() {
   main.appendChild(travelGal);
 }
 const pageTitleMap = {
-  "index": "Discover Taniti",
+  "/": "Discover Taniti",
   "lodging": "Taniti Accommodations",
   "dining": "Experience Fine Dining",
   "attractions": "Sites to See",
