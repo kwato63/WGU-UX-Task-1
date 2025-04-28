@@ -410,8 +410,8 @@ function build_bottom_display() {
   const main = document.querySelector("main");
 
   const travelGal = document.createElement("gallery-teaser");
-  travelGal.setAttribute("data-src", `data/travel.json`);
-  travelGal.setAttribute("data-header", "Getting Around Taniti");
+  travelGal.setAttribute("data-src", `data/resources.json`);
+  travelGal.setAttribute("data-header", "Additional Information");
 
   main.appendChild(travelGal);
 }

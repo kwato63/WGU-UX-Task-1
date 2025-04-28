@@ -1,0 +1,61 @@
+[
+    {
+      "title": "Air Travel to Taniti",
+      "shortDescription": "Almost all visitors arrive by air through Taniti’s small but expanding airport. Learn more about flying to our tropical paradise.",
+      "details": [
+        "Taniti is served by a small airport that can accommodate small jets and propeller planes.",
+        "An expansion project is underway to allow larger jets to land within the next few years.",
+        "A small cruise ship docks once a week at Yellow Leaf Bay, but most visitors arrive by air.",
+        "Flight schedules vary seasonally, so visitors are encouraged to book well in advance."
+      ],
+      "image": "images/Beach.jpeg",
+      "imageCredit": "Photo by Taniti Tourism Board",
+      "imageTitle": "Small jet arriving at Taniti Airport",
+      "imageAltText": "Small plane landing on tropical island runway",
+      "heroTitle": "Fly to Taniti",
+      "heroText": "Getting here is half the adventure — and Taniti’s airport is ready to welcome you."
+    },
+    {
+      "title": "Land Travel on Taniti",
+      "shortDescription": "Exploring Taniti is easy, with a variety of ground transportation options available for visitors and locals alike.",
+      "details": [
+        "Public buses serve Taniti City and operate daily from 5 a.m. to 11 p.m.",
+        "Private buses connect visitors to the rest of the island, including remote beaches and villages.",
+        "Taxis are readily available in Taniti City for quick and easy rides.",
+        "Rental cars can be obtained from a local agency near the airport — book early during peak season!",
+        "Bike rentals are available across the city; helmets are required by law for all cyclists.",
+        "Taniti City is flat and very walkable, making it easy to explore on foot.",
+        "Many tourists stay near Merriton Landing, a lively area full of shops, dining, and entertainment — all easily walkable."
+      ],
+      "image": "images/Beach.jpeg",
+      "imageCredit": "Photo by Taniti Tourism Board",
+      "imageTitle": "Bicycles parked along Taniti City street",
+      "imageAltText": "Row of colorful rental bikes on a tropical island sidewalk",
+      "heroTitle": "Explore Taniti by Land",
+      "heroText": "From buses to bikes, getting around Taniti is simple, safe, and part of the island experience."
+    },
+    {
+      "title": "Frequently Asked Questions",
+      "shortDescription": "Answers to the most common questions travelers have before visiting Taniti Island.",
+      "details": [
+        "What kind of power outlets are used in Taniti? <br> Taniti uses 120-volt outlets, the same as in the United States.",
+        "Can I buy alcohol at any time? <br> Alcohol cannot be sold or served between midnight and 9:00 a.m.",
+        "What is the drinking age? <br> The drinking age is 18, but enforcement is generally relaxed.",
+        "Is English widely spoken? <br> Many younger Tanitians speak fluent English. In rural areas, English is less common, especially among older residents.",
+        "Are there hospitals and clinics? <br> Taniti has one hospital and several clinics. The hospital staff includes many multilingual employees.",
+        "Is crime a concern? <br> Violent crime is very rare, but visitors should stay alert for pickpocketing and petty theft, especially in tourist areas.",
+        "Are there national holidays to be aware of? <br> Yes, Taniti celebrates many national holidays. During holidays, tourist attractions and restaurants may close, so plan accordingly.",
+        "What currency is used? <br> Taniti uses the U.S. dollar, but many businesses also accept euros and yen. Banks and businesses provide currency exchange services, and major credit cards are widely accepted.",
+        "Are credit cards accepted everywhere? <br> Most major credit cards are accepted, especially in Taniti City and tourist areas.",
+        "What is the best way to exchange money? <br> Several banks offer currency exchange services with competitive rates.",
+        "How safe is it to walk around at night? <br> Taniti City is generally safe, but it’s still wise to stick to well-lit areas and travel in groups when possible."
+      ],
+      "image": "images/Beach.jpeg",
+      "imageCredit": "Photo by Taniti Tourism Board",
+      "imageTitle": "Travelers walking in Taniti City’s market",
+      "imageAltText": "Tourists browsing an open-air market in Taniti City",
+      "heroTitle": "Plan Your Trip with Confidence",
+      "heroText": "Get all the essential information you need for a worry-free visit to beautiful Taniti Island."
+    }
+  ]
+  
