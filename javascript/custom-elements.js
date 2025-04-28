@@ -213,7 +213,7 @@ class SearchResultTeaser extends HTMLElement {
     matches.forEach((item) => {
       const teaserWrapper = document.createElement("div");
       teaserWrapper.classList.add("teaser", "teaser-left");
-
+      let mainSrc =""
       let srcParam = encodeURIComponent(
         item.src.replace(/^data\//, "").replace(/\.json$/, "")
       );
