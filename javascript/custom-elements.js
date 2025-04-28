@@ -300,15 +300,15 @@ class GalleryTeaser extends HTMLElement {
 
       const container = document.createElement("div");
       container.classList.add("gallery-container");
-      if (data.length > visibleCount) {
-        const leftBtn = document.createElement("button");
-        leftBtn.classList.add("gallery-btn", "left");
-        leftBtn.innerHTML = "&#10094;";
 
-        const rightBtn = document.createElement("button");
-        rightBtn.classList.add("gallery-btn", "right");
-        rightBtn.innerHTML = "&#10095;";
-      }
+      const leftBtn = document.createElement("button");
+      leftBtn.classList.add("gallery-btn", "left");
+      leftBtn.innerHTML = "&#10094;";
+
+      const rightBtn = document.createElement("button");
+      rightBtn.classList.add("gallery-btn", "right");
+      rightBtn.innerHTML = "&#10095;";
+
       const track = document.createElement("div");
       track.classList.add("gallery-track");
 
@@ -335,14 +335,13 @@ class GalleryTeaser extends HTMLElement {
         track.appendChild(card);
       });
 
-      if (data.length > visibleCount) {
-        container.appendChild(leftBtn);
+      if (data.length <= visibleCount) {
+        leftBtn.style.display = "none";
+        rightBtn.style.display = "none";
       }
+      container.appendChild(leftBtn);
       container.appendChild(track);
-      
-      if (data.length > visibleCount) {
-        container.appendChild(rightBtn);
-      }
+      container.appendChild(rightBtn);
       this.appendChild(container);
 
       // Sliding behavior
