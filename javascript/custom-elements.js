@@ -234,7 +234,7 @@ class SearchResultTeaser extends HTMLElement {
           <p>${item.shortDescription}</p>
           ${
             mainSrc
-              ? `<a href="${mainSrc}"`
+              ? `<a href="${mainSrc}">Read More</a>`
               : `<a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>`
           }
           
