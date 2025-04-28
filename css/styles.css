@@ -261,7 +261,7 @@ teaser-section p {
   text-align: left;
 }
 
-search-result-teaser.teaser-image,
+search-result-teaser .teaser-image,
 teaser-section .teaser-image {
   max-width: 250px;
   height: auto;
