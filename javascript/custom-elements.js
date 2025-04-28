@@ -78,6 +78,58 @@ class HeroBanner extends HTMLElement {
 }
 customElements.define("hero-banner", HeroBanner);
 
+class AboutSection extends HTMLElement {
+  async connectedCallback() {
+    const dataSrc = this.dataset.src;
+    const dataTitle = this.dataset.title;
+    if (!dataSrc || !dataTitle) {
+      console.log("AboutSection: Missing 'src' or 'title' data attributes.");
+      return;
+    }
+
+    try {
+      const res = await fetch(dataSrc);
+      const data = await res.json();
+      const matchedItem = data.find((item) => item.title === dataTitle);
+      if (!matchedItem) {
+        console.log(
+          `AboutSection: No matching item found for title "${dataTitle}".`
+        );
+        return;
+      }
+
+      this.innerHTML = ""; // Clear any previous content
+
+      const titleEl = document.createElement("h2");
+      titleEl.textContent = matchedItem.title;
+      this.appendChild(titleEl);
+      const details = matchedItem.details;
+      if (Array.isArray(details)) {
+        details.forEach((paraText) => {
+          const para = document.createElement("p");
+          para.textContent = paraText; // If you're inserting plain text
+          this.appendChild(para);
+        });
+      } else if (typeof details === "string") {
+        const para = document.createElement("p");
+        para.textContent = details; // If you're inserting plain text
+        this.appendChild(para);
+      } else {
+        console.log(
+          `AboutSection: 'details' is not an array or a string in the data.`
+        );
+      }
+    } catch (err) {
+      console.error(
+        `AboutSection: Failed to load about section from ${dataSrc}:`,
+        err
+      );
+    }
+  }
+}
+
+customElements.define("about-section", AboutSection);
+
 class TeaserSection extends HTMLElement {
   async connectedCallback() {
     const jsonPath = this.dataset.src;
@@ -174,7 +226,7 @@ class CarouselTeasers extends HTMLElement {
         const slide = document.createElement("div");
         slide.classList.add("carousel-slide");
         if (i === 0) slide.classList.add("active");
-        
+
         const srcParam = encodeURIComponent(
           dataSrc.replace(/^data\//, "").replace(/\.json$/, "")
         );
@@ -224,61 +276,117 @@ class CarouselTeasers extends HTMLElement {
 }
 customElements.define("carousel-teasers", CarouselTeasers);
 
-class AboutSection extends HTMLElement {
+class GalleryTeaser extends HTMLElement {
   async connectedCallback() {
     const dataSrc = this.dataset.src;
-    const dataTitle = this.dataset.title;
-    if (!dataSrc || !dataTitle) {
-      console.log("AboutSection: Missing 'src' or 'title' data attributes.");
+    const headerText = this.dataset.header;
+    const visibleCount = parseInt(this.dataset.visible) || 3; // default to 3 if not set
+    if (!dataSrc || !headerText) {
+      console.log("GalleryTeaser: Missing 'src' or 'header' data attributes.");
       return;
     }
 
     try {
       const res = await fetch(dataSrc);
       const data = await res.json();
-      const matchedItem = data.find((item) => item.title === dataTitle);
-      if (!matchedItem) {
-        console.log(
-          `AboutSection: No matching item found for title "${dataTitle}".`
-        );
-        return;
+
+      if (data.length === 0) {
+        console.log("GalleryTeaser: No data found in the provided JSON.");
       }
 
-      this.innerHTML = ""; // Clear any previous content
+      const header = document.createElement("h2");
+      header.textContent = headerText;
+      this.appendChild(header);
 
-      const titleEl = document.createElement("h2");
-      titleEl.textContent = matchedItem.title;
-      this.appendChild(titleEl);
-      const details = matchedItem.details;
-      if (Array.isArray(details)) {
-        details.forEach((paraText) => {
-          const para = document.createElement("p");
-          para.textContent = paraText; // If you're inserting plain text
-          this.appendChild(para);
+      const container = document.createElement("div");
+      container.classList.add("gallery-container");
+
+      const leftBtn = document.createElement("button");
+      leftBtn.classList.add("gallery-btn", "left");
+      leftBtn.innerHTML = "&#10094;";
+
+      const rightBtn = document.createElement("button");
+      rightBtn.classList.add("gallery-btn", "right");
+      rightBtn.innerHTML = "&#10095;";
+
+      const track = document.createElement("div");
+      track.classList.add("gallery-track");
+
+      data.forEach((item) => {
+        const card = document.createElement("div");
+        card.classList.add("gallery-card");
+
+        const srcParam = encodeURIComponent(
+          dataSrc.replace(/^data\//, "").replace(/\.json$/, "")
+        );
+        const titleParam = encodeURIComponent(item.title);
+
+        card.innerHTML = `
+          <div class="gallery-image" style="background-image: url('${
+            item.image
+          }');" role="img" aria-label="${item.imageAltText}"></div>
+          <div class="gallery-content">
+            <h3>${item.title}</h3>
+            <p>${item.shortDescription}</p>
+            <a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>
+            <small class="image-credit">${item.imageCredit || ""}</small>
+          </div>
+        `;
+        track.appendChild(card);
+      });
+
+      container.appendChild(leftBtn);
+      container.appendChild(track);
+      container.appendChild(rightBtn);
+      this.appendChild(container);
+
+      // Sliding behavior
+      let currentIndex = 0;
+      const cards = track.querySelectorAll(".gallery-card");
+
+      const showCards = (index) => {
+        const cardWidth = cards[0]?.offsetWidth || 0;
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+      };
+
+      leftBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          showCards(currentIndex);
+        }
+      });
+
+      rightBtn.addEventListener("click", () => {
+        if (currentIndex < cards.length - visibleCount) {
+          currentIndex++;
+          showCards(currentIndex);
+        }
+      });
+
+      // Initial layout setup
+      const updateLayout = () => {
+        track.style.display = "flex";
+        track.style.transition = "transform 0.5s ease";
+        cards.forEach((card) => {
+          card.style.flex = `0 0 calc(100% / ${visibleCount})`;
+          card.style.boxSizing = "border-box";
         });
-      } else if (typeof details === "string") {
-        const para = document.createElement("p");
-        para.textContent = details; // If you're inserting plain text
-        this.appendChild(para);
-      } else {
-        console.log(
-          `AboutSection: 'details' is not an array or a string in the data.`
-        );
-      }
+      };
+
+      window.addEventListener("resize", updateLayout);
+      updateLayout();
     } catch (err) {
       console.error(
-        `AboutSection: Failed to load about section from ${dataSrc}:`,
+        `GalleryTeaser: Failed to load gallery data from ${dataSrc}:`,
         err
       );
     }
   }
 }
-
-customElements.define("about-section", AboutSection);
-
+customElements.define("gallery-teaser", GalleryTeaser);
 
 // Filling functions
-function build_top_display(src,title) {
+function build_top_display(src, title) {
   if (src && title) {
     const main = document.querySelector(".main");
 
@@ -297,4 +405,13 @@ function build_top_display(src,title) {
     document.getElementById("mainContent").innerHTML =
       "<p>Error: Missing 'src' or 'title' parameters in the URL.</p>";
   }
+}
+function build_bottom_display() {
+  const main = document.querySelector(".main");
+
+  const travelGal = document.createElement("gallery-teaser");
+  travelGal.setAttribute("data-src", `data/travel.json`);
+  travelGal.setAttribute("data-header", "Getting Around Taniti");
+
+  main.appendChild(travelGal);
 }

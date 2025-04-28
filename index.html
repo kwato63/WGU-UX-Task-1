@@ -26,10 +26,10 @@
         const urlParams = new URLSearchParams(window.location.search);
         return decodeURIComponent(urlParams.get(param) || "");
       }
-
       const src = getParam("src") || "main-details";
       const title = getParam("title") || "Discover Taniti";
       build_top_display(src, title);
+      build_bottom_display();
     </script>
   </body>
 </html>
