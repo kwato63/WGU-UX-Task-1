@@ -356,15 +356,20 @@ class GalleryTeaser extends HTMLElement {
       leftBtn.addEventListener("click", () => {
         if (currentIndex > 0) {
           currentIndex--;
-          showCards(currentIndex);
+        } else {
+          currentIndex = cards.length - visibleCount;
+          if (currentIndex < 0) currentIndex = 0;
         }
+        showCards(currentIndex);
       });
 
       rightBtn.addEventListener("click", () => {
         if (currentIndex < cards.length - visibleCount) {
           currentIndex++;
-          showCards(currentIndex);
+        } else {
+          currentIndex = 0;
         }
+        showCards(currentIndex);
       });
 
       // Initial layout setup
