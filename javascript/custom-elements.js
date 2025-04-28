@@ -335,9 +335,14 @@ class GalleryTeaser extends HTMLElement {
         track.appendChild(card);
       });
 
-      container.appendChild(leftBtn);
+      if (data.length > visibleCount) {
+        container.appendChild(leftBtn);
+      }
       container.appendChild(track);
-      container.appendChild(rightBtn);
+      
+      if (data.length > visibleCount) {
+        container.appendChild(rightBtn);
+      }
       this.appendChild(container);
 
       // Sliding behavior
