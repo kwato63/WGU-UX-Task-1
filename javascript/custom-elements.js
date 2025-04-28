@@ -275,3 +275,26 @@ class AboutSection extends HTMLElement {
 }
 
 customElements.define("about-section", AboutSection);
+
+
+// Filling functions
+function build_top_display(src,title) {
+  if (src && title) {
+    const main = document.querySelector(".main");
+
+    const hero = document.createElement("hero-banner");
+    hero.setAttribute("data-src", `data/${src}.json`);
+    hero.setAttribute("data-title", title);
+
+    const about = document.createElement("about-section");
+    about.setAttribute("data-src", `data/${src}.json`);
+    about.setAttribute("data-title", title);
+
+    main.prepend(hero);
+    hero.after(about);
+  } else {
+    // Handle missing params
+    document.getElementById("mainContent").innerHTML =
+      "<p>Error: Missing 'src' or 'title' parameters in the URL.</p>";
+  }
+}
