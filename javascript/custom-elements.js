@@ -388,7 +388,7 @@ customElements.define("gallery-teaser", GalleryTeaser);
 // Filling functions
 function build_top_display(src, title) {
   if (src && title) {
-    const main = document.querySelector(".main");
+    const main = document.querySelector("main");
 
     const hero = document.createElement("hero-banner");
     hero.setAttribute("data-src", `data/${src}.json`);
