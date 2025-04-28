@@ -6,7 +6,7 @@ class HeaderComponent extends HTMLElement {
         <div class="nav-container">
           <nav id="navbar">
             <ul>
-              <li><a href="index">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="entertainment">Entertainment And Events</a></li>
               <li><a href="lodging">Accommodations</a></li>
               <li><a href="dining">Dining</a></li>
