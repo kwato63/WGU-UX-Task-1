@@ -6,12 +6,12 @@ class HeaderComponent extends HTMLElement {
         <div class="nav-container">
           <nav id="navbar">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="entertainment.html">Entertainment And Events</a></li>
-              <li><a href="lodging.html">Accommodations</a></li>
-              <li><a href="dining.html">Dining</a></li>
-              <li><a href="attractions.html">Sites to See</a></li>
-              <li><a href="resources.html">Travel Resources</a></li>
+              <li><a href="index">Home</a></li>
+              <li><a href="entertainment">Entertainment And Events</a></li>
+              <li><a href="lodging">Accommodations</a></li>
+              <li><a href="dining">Dining</a></li>
+              <li><a href="attractions">Sites to See</a></li>
+              <li><a href="resources">Travel Resources</a></li>
             </ul>
           </nav>
           <form id="searchForm">
