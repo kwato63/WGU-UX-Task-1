@@ -28,7 +28,7 @@ class HeaderComponent extends HTMLElement {
         event.preventDefault();
         const query = document.getElementById("searchInput").value.trim();
         if (query) {
-          window.location.href = `search-results.html?query=${encodeURIComponent(
+          window.location.href = `search-results?query=${encodeURIComponent(
             query
           )}`;
         }
@@ -45,14 +45,14 @@ class FooterComponent extends HTMLElement {
       <footer>
         <nav>
           <ul>
-            <li><a href="lodging.html">Lodging</a></li>
-            <li><a href="dining.html">Dining</a></li>
-            <li><a href="attractions.html">Attractions</a></li>
-            <li><a href="entertainment.html">Entertainment And Events</a></li>
-            <li><a href="details.html?src=resources&title=Travel%20to%20Taniti">Airfare</a></li>
-            <li><a href="details.html?src=resources&title=Getting%20Around%20Taniti">Transportation</a></li>
-            <li><a href="resources.html">Common Questions</a></li>
-            <li><a href="details.html?src=resources&title=Frequently%20Asked%20Questions">Contact</a></li>
+            <li><a href="lodging">Lodging</a></li>
+            <li><a href="dining">Dining</a></li>
+            <li><a href="attractions">Attractions</a></li>
+            <li><a href="entertainment">Entertainment And Events</a></li>
+            <li><a href="details?src=resources&title=Travel%20to%20Taniti">Airfare</a></li>
+            <li><a href="details?src=resources&title=Getting%20Around%20Taniti">Transportation</a></li>
+            <li><a href="resources">Common Questions</a></li>
+            <li><a href="details?src=resources&title=Frequently%20Asked%20Questions">Contact</a></li>
           </ul>
         </nav>
         <p>&copy; 2025 Taniti Tourism Authority. All rights reserved.</p>
@@ -235,7 +235,7 @@ class SearchResultTeaser extends HTMLElement {
           ${
             mainSrc
               ? `<a href="${mainSrc}">Read More</a>`
-              : `<a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>`
+              : `<a href="details?src=${srcParam}&title=${titleParam}">Read More</a>`
           }
           
           ${
@@ -291,7 +291,7 @@ class TeaserSection extends HTMLElement {
           <div>
             <h3>${item.title}</h3>
             <p>${item.shortDescription}</p>
-            <a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>
+            <a href="details?src=${srcParam}&title=${titleParam}">Read More</a>
            ${
              item.imageCredit
                ? `<p class="image-credit">Image Credit: ${item.imageCredit}</p>`
@@ -359,7 +359,7 @@ class CarouselTeasers extends HTMLElement {
           <div class="carousel-content">
             <h3>${item.title}</h3>
             <p>${item.shortDescription}</p>
-            <a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>
+            <a href="details?src=${srcParam}&title=${titleParam}">Read More</a>
             <small class="image-credit">${item.imageCredit}</small>
           </div>
         `;
@@ -451,7 +451,7 @@ class GalleryTeaser extends HTMLElement {
           <div class="gallery-content">
             <h3>${item.title}</h3>
             <p>${item.shortDescription}</p>
-            <a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>
+            <a href="details?src=${srcParam}&title=${titleParam}">Read More</a>
             <small class="image-credit">${item.imageCredit || ""}</small>
           </div>
         `;
@@ -548,12 +548,12 @@ function build_bottom_display() {
   main.appendChild(travelGal);
 }
 const pageTitleMap = {
-  "index.html": "Discover Taniti",
-  "lodging.html": "Taniti Accommodations",
-  "dining.html": "Experience Fine Dining",
-  "attractions.html": "Sites to See",
-  "entertainment.html": "Entertainment And Events",
-  "resources.html": "Useful Resources",
+  "index": "Discover Taniti",
+  "lodging": "Taniti Accommodations",
+  "dining": "Experience Fine Dining",
+  "attractions": "Sites to See",
+  "entertainment": "Entertainment And Events",
+  "resources": "Useful Resources",
 };
 
 function getParams() {
