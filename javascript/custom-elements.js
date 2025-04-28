@@ -6,7 +6,7 @@ class HeaderComponent extends HTMLElement {
         <div class="nav-container">
           <nav id="navbar">
             <ul>
-              <li><a href="/">Home</a></li>
+              <li><a href="">Home</a></li>
               <li><a href="entertainment">Entertainment And Events</a></li>
               <li><a href="lodging">Accommodations</a></li>
               <li><a href="dining">Dining</a></li>
@@ -548,7 +548,7 @@ function build_bottom_display() {
   main.appendChild(travelGal);
 }
 const pageTitleMap = {
-  "/": "Discover Taniti",
+  "": "Discover Taniti",
   "lodging": "Taniti Accommodations",
   "dining": "Experience Fine Dining",
   "attractions": "Sites to See",
