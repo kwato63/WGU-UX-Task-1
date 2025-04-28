@@ -213,17 +213,14 @@ class SearchResultTeaser extends HTMLElement {
     matches.forEach((item) => {
       const teaserWrapper = document.createElement("div");
       teaserWrapper.classList.add("teaser", "teaser-left");
-      let mainSrc =""
+      let mainSrc;
       let srcParam = encodeURIComponent(
         item.src.replace(/^data\//, "").replace(/\.json$/, "")
       );
 
       // Special handling for main-details.json matches
-      if (
-        item.src.includes("main-details.json") &&
-        reversePageTitleMap[item.title]
-      ) {
-        mainSrc = encodeURIComponent(reversePageTitleMap[item.title]);
+      if (item.src.includes("main-details.json")) {
+        mainSrc=reversePageTitleMap[item.title];
       }
 
       const titleParam = encodeURIComponent(item.title);
