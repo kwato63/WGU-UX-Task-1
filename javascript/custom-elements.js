@@ -151,9 +151,12 @@ customElements.define("about-section", AboutSection);
 
 class SearchResultTeaser extends HTMLElement {
   async connectedCallback() {
-    const searchQuery = this.dataset.query?.toLowerCase();
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchQuery = urlParams.get('query')?.toLowerCase();
+
     if (!searchQuery) {
-      console.error("SearchResultTeaser: Missing 'query' data attribute.");
+      console.error("SearchResultTeaser: Missing 'query' parameter in the URL.");
+      this.innerHTML = `<p>No search query provided.</p>`;
       return;
     }
 
@@ -174,47 +177,35 @@ class SearchResultTeaser extends HTMLElement {
     }
 
     const matches = [];
-    try {
-      // Use Promise.all to fetch all files in parallel
-      const fetchPromises = jsonFiles.map(async (file) => {
+
+    for (const file of jsonFiles) {
+      try {
         const res = await fetch(`data/${file}`);
         const items = await res.json();
-
-        // Precompute lowercase search query once for faster comparison
-        const lowerCaseSearchQuery = searchQuery;
-
         items.forEach((item) => {
-          // Only lowercased once here for both title and descriptions
-          const itemTitle = item.title?.toLowerCase();
-          const itemDescription = item.shortDescription?.toLowerCase();
-          const itemDetails =
-            item.details?.map((detail) => detail.toLowerCase()) || [];
-
-          // Check if the search query matches any part of the item
           if (
-            (itemTitle && itemTitle.includes(lowerCaseSearchQuery)) ||
-            (itemDescription &&
-              itemDescription.includes(lowerCaseSearchQuery)) ||
-            itemDetails.some((detail) => detail.includes(lowerCaseSearchQuery))
+            item.title?.toLowerCase().includes(searchQuery) ||
+            item.shortDescription?.toLowerCase().includes(searchQuery) ||
+            (item.details &&
+              item.details.some((detail) =>
+                detail.toLowerCase().includes(searchQuery)
+              ))
           ) {
             matches.push({ ...item, src: `data/${file}` });
           }
         });
-      });
-
-      // Wait for all the fetches to complete
-      await Promise.all(fetchPromises);
-    } catch (err) {
-      console.error("SearchResultTeaser: Error fetching data files:", err);
+      } catch (err) {
+        console.error(`SearchResultTeaser: Error fetching ${file}:`, err);
+      }
     }
 
     if (matches.length === 0) {
-      this.innerHTML = `<p>No results found for "${this.dataset.query}".</p>`;
+      this.innerHTML = `<p>No results found for "${searchQuery}".</p>`;
       return;
     }
 
     const header = document.createElement("h2");
-    header.textContent = `Search Results for "${this.dataset.query}"`;
+    header.textContent = `Search Results for "${searchQuery}"`;
     this.appendChild(header);
 
     matches.forEach((item) => {
@@ -243,11 +234,11 @@ class SearchResultTeaser extends HTMLElement {
           <h3>${item.title}</h3>
           <p>${item.shortDescription}</p>
           <a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>
-          ${
+          $(
             item.imageCredit
               ? `<p class="image-credit">Image Credit: ${item.imageCredit}</p>`
               : ""
-          }
+          )
         </div>
       `;
       this.appendChild(teaserWrapper);
@@ -256,6 +247,7 @@ class SearchResultTeaser extends HTMLElement {
 }
 
 customElements.define("search-result-teaser", SearchResultTeaser);
+
 
 class TeaserSection extends HTMLElement {
   async connectedCallback() {
