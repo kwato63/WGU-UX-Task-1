@@ -223,7 +223,7 @@ class SearchResultTeaser extends HTMLElement {
         item.src.includes("main-details.json") &&
         reversePageTitleMap[item.title]
       ) {
-        srcParam = encodeURIComponent(reversePageTitleMap[item.title]);
+        mainSrc = encodeURIComponent(reversePageTitleMap[item.title]);
       }
 
       const titleParam = encodeURIComponent(item.title);
@@ -235,7 +235,12 @@ class SearchResultTeaser extends HTMLElement {
         <div class="teaser-text">
           <h3>${item.title}</h3>
           <p>${item.shortDescription}</p>
-          <a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>
+          ${
+            mainSrc
+              ? `<a href="${mainSrc}"`
+              : `<a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>`
+          }
+          
           ${
             item.imageCredit
               ? `<p class="image-credit">Image Credit: ${item.imageCredit}</p>`
