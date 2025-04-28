@@ -6,7 +6,7 @@ class HeaderComponent extends HTMLElement {
         <nav id="navbar">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="entertainment.html">Entertainment</a></li>
+            <li><a href="entertainment.html">Entertainment And Events</a></li>
             <li><a href="lodging.html">Accommodations</a></li>
             <li><a href="dining.html">Dining</a></li>
             <li><a href="attractions.html">Sites to See</a></li>
@@ -28,11 +28,11 @@ class FooterComponent extends HTMLElement {
             <li><a href="lodging.html">Lodging</a></li>
             <li><a href="dining.html">Dining</a></li>
             <li><a href="attractions.html">Attractions</a></li>
-            <li><a href="entertainment.html">Events</a></li>
-            <li><a href="resources.html">Airfare</a></li>
-            <li><a href="resources.html">Transportation</a></li>
-            <li><a href="resources.html">Contact</a></li>
+            <li><a href="entertainment.html">Entertainment And Events</a></li>
+            <li><a href="details.html?src=resources&title=Travel%20to%20Taniti">Airfare</a></li>
+            <li><a href="details.html?src=resources&title=Getting%20Around%20Taniti">Transportation</a></li>
             <li><a href="resources.html">Common Questions</a></li>
+            <li><a href="details.html?src=resources&title=Frequently%20Asked%20Questions">Contact</a></li>
           </ul>
         </nav>
         <p>&copy; 2025 Taniti Tourism Authority. All rights reserved.</p>
