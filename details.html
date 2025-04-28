@@ -22,8 +22,8 @@
         return decodeURIComponent(urlParams.get(param) || "");
       }
 
-      const src = getParam("src");    // e.g. "main-details"
-      const title = getParam("title"); // e.g. "Discover Taniti"
+      const src = getParam("src")||"main-details"
+      const title = getParam("title")||"Discover Taniti"
 
       // Only run if both parameters are present
       if (src && title) {
