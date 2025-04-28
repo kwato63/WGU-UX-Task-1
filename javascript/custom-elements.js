@@ -152,10 +152,12 @@ customElements.define("about-section", AboutSection);
 class SearchResultTeaser extends HTMLElement {
   async connectedCallback() {
     const urlParams = new URLSearchParams(window.location.search);
-    const searchQuery = urlParams.get('query')?.toLowerCase();
+    const searchQuery = urlParams.get("query")?.toLowerCase();
 
     if (!searchQuery) {
-      console.error("SearchResultTeaser: Missing 'query' parameter in the URL.");
+      console.error(
+        "SearchResultTeaser: Missing 'query' parameter in the URL."
+      );
       this.innerHTML = `<p>No search query provided.</p>`;
       return;
     }
@@ -234,20 +236,20 @@ class SearchResultTeaser extends HTMLElement {
           <h3>${item.title}</h3>
           <p>${item.shortDescription}</p>
           <a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>
-          $(
+          ${
             item.imageCredit
               ? `<p class="image-credit">Image Credit: ${item.imageCredit}</p>`
               : ""
-          )
+          }
         </div>
       `;
+
       this.appendChild(teaserWrapper);
     });
   }
 }
 
 customElements.define("search-result-teaser", SearchResultTeaser);
-
 
 class TeaserSection extends HTMLElement {
   async connectedCallback() {
