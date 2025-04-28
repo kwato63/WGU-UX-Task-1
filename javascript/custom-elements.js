@@ -3,20 +3,22 @@ class HeaderComponent extends HTMLElement {
     this.innerHTML = `
       <header>
         <h1>Taniti Island</h1>
-        <nav id="navbar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="entertainment.html">Entertainment And Events</a></li>
-            <li><a href="lodging.html">Accommodations</a></li>
-            <li><a href="dining.html">Dining</a></li>
-            <li><a href="attractions.html">Sites to See</a></li>
-            <li><a href="resources.html">Travel Resources</a></li>
-          </ul>
-        </nav>
-        <form id="searchForm">
-          <input type="text" id="searchInput" placeholder="Search..." required />
-          <button type="submit">Search</button>
-        </form>
+        <div class="nav-container">
+          <nav id="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="entertainment.html">Entertainment And Events</a></li>
+              <li><a href="lodging.html">Accommodations</a></li>
+              <li><a href="dining.html">Dining</a></li>
+              <li><a href="attractions.html">Sites to See</a></li>
+              <li><a href="resources.html">Travel Resources</a></li>
+            </ul>
+          </nav>
+          <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search..." required />
+            <button type="submit">Search</button>
+          </form>
+        </div>
       </header>
     `;
 
@@ -185,12 +187,14 @@ class SearchResultTeaser extends HTMLElement {
           // Only lowercased once here for both title and descriptions
           const itemTitle = item.title?.toLowerCase();
           const itemDescription = item.shortDescription?.toLowerCase();
-          const itemDetails = item.details?.map(detail => detail.toLowerCase()) || [];
+          const itemDetails =
+            item.details?.map((detail) => detail.toLowerCase()) || [];
 
           // Check if the search query matches any part of the item
           if (
             (itemTitle && itemTitle.includes(lowerCaseSearchQuery)) ||
-            (itemDescription && itemDescription.includes(lowerCaseSearchQuery)) ||
+            (itemDescription &&
+              itemDescription.includes(lowerCaseSearchQuery)) ||
             itemDetails.some((detail) => detail.includes(lowerCaseSearchQuery))
           ) {
             matches.push({ ...item, src: `data/${file}` });
@@ -252,7 +256,6 @@ class SearchResultTeaser extends HTMLElement {
 }
 
 customElements.define("search-result-teaser", SearchResultTeaser);
-
 
 class TeaserSection extends HTMLElement {
   async connectedCallback() {
