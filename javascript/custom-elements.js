@@ -425,13 +425,12 @@ function build_bottom_display() {
   main.appendChild(travelGal);
 }
 const pageTitleMap = {
-  "index.html": "Welcome to Our Website",
-  "lodging.html": "Lodging Information",
-  "dining.html": "Dining Options",
+  "index.html": "Discover Taniti",
+  "lodging.html": "Taniti Accomodations",
+  "dining.html": "Experience Fine Dining",
   "attractions.html": "Sites to See",
-  "entertainment.html": "Entertainment Choices",
+  "entertainment.html": "Entertainment And Events",
   "resources.html": "Useful Resources",
-  "about.html": "About Us",
 };
 
 function getParams() {
