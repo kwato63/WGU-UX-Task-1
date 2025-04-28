@@ -21,13 +21,7 @@
     </main>
     <site-footer></site-footer>
     <script>
-      // Function to get and decode URL parameters
-      function getParam(param) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return decodeURIComponent(urlParams.get(param) || "");
-      }
-      const src = getParam("src") || "main-details";
-      const title = getParam("title") || "Discover Taniti";
+      const { src, title } = getParams();
       build_top_display(src, title);
       build_bottom_display();
     </script>

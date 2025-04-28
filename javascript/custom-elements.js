@@ -420,7 +420,26 @@ function build_bottom_display() {
 
   const travelGal = document.createElement("gallery-teaser");
   travelGal.setAttribute("data-src", `data/resources.json`);
-  travelGal.setAttribute("data-header", "Additional Information");
+  travelGal.setAttribute("data-header", "Additional Resources");
 
   main.appendChild(travelGal);
+}
+const pageTitleMap = {
+  "index.html": "Welcome to Our Website",
+  "lodging.html": "Lodging Information",
+  "dining.html": "Dining Options",
+  "attractions.html": "Sites to See",
+  "entertainment.html": "Entertainment Choices",
+  "resources.html": "Useful Resources",
+  "about.html": "About Us",
+};
+
+function getParams() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const src = urlParams.get("src") || "main-details";
+  const title =
+    urlParams.get("title") ||
+    pageTitleMap[window.location.pathname.split("/").pop()] ||
+    "Discover Taniti";
+  return { src, title };
 }
