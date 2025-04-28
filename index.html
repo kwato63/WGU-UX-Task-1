@@ -42,8 +42,8 @@
         about.setAttribute("data-src", `data/${src}.json`);
         about.setAttribute("data-title", title);
 
-        main.prepend(hero);
         main.prepend(about);
+        main.prepend(hero);
       } else {
         // Handle missing params
         document.getElementById("mainContent").innerHTML =
