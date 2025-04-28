@@ -426,7 +426,7 @@ function build_bottom_display() {
 }
 const pageTitleMap = {
   "index.html": "Discover Taniti",
-  "lodging.html": "Taniti Accomodations",
+  "lodging.html": "Taniti Accommodations",
   "dining.html": "Experience Fine Dining",
   "attractions.html": "Sites to See",
   "entertainment.html": "Entertainment And Events",
