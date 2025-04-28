@@ -98,6 +98,37 @@ site-header header nav a {
   text-decoration: none;
 }
 
+site-header header form#searchForm {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+site-header header form#searchForm input#searchInput {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+site-header header form#searchForm button {
+  padding: 6px 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+site-header header form#searchForm button:hover {
+  background-color: #0056b3; 
+}
+
 /* --------------- */
 /* Header Sections */
 /* --------------- */

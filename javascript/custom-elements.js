@@ -13,10 +13,28 @@ class HeaderComponent extends HTMLElement {
             <li><a href="resources.html">Travel Resources</a></li>
           </ul>
         </nav>
+        <form id="searchForm">
+          <input type="text" id="searchInput" placeholder="Search..." required />
+          <button type="submit">Search</button>
+        </form>
       </header>
     `;
+
+    this.querySelector("#searchForm").addEventListener(
+      "submit",
+      function (event) {
+        event.preventDefault();
+        const query = document.getElementById("searchInput").value.trim();
+        if (query) {
+          window.location.href = `search-results.html?query=${encodeURIComponent(
+            query
+          )}`;
+        }
+      }
+    );
   }
 }
+
 customElements.define("site-header", HeaderComponent);
 
 class FooterComponent extends HTMLElement {
@@ -111,7 +129,7 @@ class AboutSection extends HTMLElement {
         });
       } else if (typeof details === "string") {
         const para = document.createElement("p");
-        para.innerHTML = details; 
+        para.innerHTML = details;
         this.appendChild(para);
       } else {
         console.log(
