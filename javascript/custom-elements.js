@@ -155,6 +155,13 @@ class SearchResultTeaser extends HTMLElement {
       return;
     }
 
+    const reversePageTitleMap = Object.fromEntries(
+      Object.entries(pageTitleMap).map(([file, title]) => [
+        title,
+        file.replace(".html", ""),
+      ])
+    );
+
     let jsonFiles = [];
     try {
       const indexRes = await fetch("data/index.json");
@@ -165,26 +172,36 @@ class SearchResultTeaser extends HTMLElement {
     }
 
     const matches = [];
-
-    for (const file of jsonFiles) {
-      try {
+    try {
+      // Use Promise.all to fetch all files in parallel
+      const fetchPromises = jsonFiles.map(async (file) => {
         const res = await fetch(`data/${file}`);
         const items = await res.json();
+
+        // Precompute lowercase search query once for faster comparison
+        const lowerCaseSearchQuery = searchQuery;
+
         items.forEach((item) => {
+          // Only lowercased once here for both title and descriptions
+          const itemTitle = item.title?.toLowerCase();
+          const itemDescription = item.shortDescription?.toLowerCase();
+          const itemDetails = item.details?.map(detail => detail.toLowerCase()) || [];
+
+          // Check if the search query matches any part of the item
           if (
-            item.title?.toLowerCase().includes(searchQuery) ||
-            item.shortDescription?.toLowerCase().includes(searchQuery) ||
-            (item.details &&
-              item.details.some((detail) =>
-                detail.toLowerCase().includes(searchQuery)
-              ))
+            (itemTitle && itemTitle.includes(lowerCaseSearchQuery)) ||
+            (itemDescription && itemDescription.includes(lowerCaseSearchQuery)) ||
+            itemDetails.some((detail) => detail.includes(lowerCaseSearchQuery))
           ) {
             matches.push({ ...item, src: `data/${file}` });
           }
         });
-      } catch (err) {
-        console.error(`SearchResultTeaser: Error fetching ${file}:`, err);
-      }
+      });
+
+      // Wait for all the fetches to complete
+      await Promise.all(fetchPromises);
+    } catch (err) {
+      console.error("SearchResultTeaser: Error fetching data files:", err);
     }
 
     if (matches.length === 0) {
@@ -198,12 +215,6 @@ class SearchResultTeaser extends HTMLElement {
 
     matches.forEach((item) => {
       const teaserWrapper = document.createElement("div");
-      const reversePageTitleMap = Object.fromEntries(
-        Object.entries(pageTitleMap).map(([file, title]) => [
-          title,
-          file.replace(".html", ""),
-        ])
-      );
       teaserWrapper.classList.add("teaser", "teaser-left");
 
       let srcParam = encodeURIComponent(
@@ -241,6 +252,7 @@ class SearchResultTeaser extends HTMLElement {
 }
 
 customElements.define("search-result-teaser", SearchResultTeaser);
+
 
 class TeaserSection extends HTMLElement {
   async connectedCallback() {
