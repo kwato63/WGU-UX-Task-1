@@ -147,6 +147,101 @@ class AboutSection extends HTMLElement {
 
 customElements.define("about-section", AboutSection);
 
+class SearchResultTeaser extends HTMLElement {
+  async connectedCallback() {
+    const searchQuery = this.dataset.query?.toLowerCase();
+    if (!searchQuery) {
+      console.error("SearchResultTeaser: Missing 'query' data attribute.");
+      return;
+    }
+
+    let jsonFiles = [];
+    try {
+      const indexRes = await fetch("data/index.json");
+      jsonFiles = await indexRes.json();
+    } catch (err) {
+      console.error("SearchResultTeaser: Failed to load index.json", err);
+      return;
+    }
+
+    const matches = [];
+
+    for (const file of jsonFiles) {
+      try {
+        const res = await fetch(`data/${file}`);
+        const items = await res.json();
+        items.forEach((item) => {
+          if (
+            item.title?.toLowerCase().includes(searchQuery) ||
+            item.shortDescription?.toLowerCase().includes(searchQuery) ||
+            (item.details &&
+              item.details.some((detail) =>
+                detail.toLowerCase().includes(searchQuery)
+              ))
+          ) {
+            matches.push({ ...item, src: `data/${file}` });
+          }
+        });
+      } catch (err) {
+        console.error(`SearchResultTeaser: Error fetching ${file}:`, err);
+      }
+    }
+
+    if (matches.length === 0) {
+      this.innerHTML = `<p>No results found for "${this.dataset.query}".</p>`;
+      return;
+    }
+
+    const header = document.createElement("h2");
+    header.textContent = `Search Results for "${this.dataset.query}"`;
+    this.appendChild(header);
+
+    matches.forEach((item) => {
+      const teaserWrapper = document.createElement("div");
+      const reversePageTitleMap = Object.fromEntries(
+        Object.entries(pageTitleMap).map(([file, title]) => [
+          title,
+          file.replace(".html", ""),
+        ])
+      );
+      teaserWrapper.classList.add("teaser", "teaser-left");
+
+      let srcParam = encodeURIComponent(
+        item.src.replace(/^data\//, "").replace(/\.json$/, "")
+      );
+
+      // Special handling for main-details.json matches
+      if (
+        item.src.includes("main-details.json") &&
+        reversePageTitleMap[item.title]
+      ) {
+        srcParam = encodeURIComponent(reversePageTitleMap[item.title]);
+      }
+
+      const titleParam = encodeURIComponent(item.title);
+
+      teaserWrapper.innerHTML = `
+        <img class="teaser-image" src="${item.image}" title="${
+        item.imageTitle || ""
+      }" alt="${item.imageAltText || ""}" />
+        <div class="teaser-text">
+          <h3>${item.title}</h3>
+          <p>${item.shortDescription}</p>
+          <a href="details.html?src=${srcParam}&title=${titleParam}">Read More</a>
+          ${
+            item.imageCredit
+              ? `<p class="image-credit">Image Credit: ${item.imageCredit}</p>`
+              : ""
+          }
+        </div>
+      `;
+      this.appendChild(teaserWrapper);
+    });
+  }
+}
+
+customElements.define("search-result-teaser", SearchResultTeaser);
+
 class TeaserSection extends HTMLElement {
   async connectedCallback() {
     const jsonPath = this.dataset.src;
