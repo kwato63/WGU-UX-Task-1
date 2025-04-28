@@ -165,7 +165,7 @@ class SearchResultTeaser extends HTMLElement {
     const reversePageTitleMap = Object.fromEntries(
       Object.entries(pageTitleMap).map(([file, title]) => [
         title,
-        file.replace(".html", ""),
+        file,
       ])
     );
 
