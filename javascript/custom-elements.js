@@ -407,7 +407,7 @@ function build_top_display(src, title) {
   }
 }
 function build_bottom_display() {
-  const main = document.querySelector(".main");
+  const main = document.querySelector("main");
 
   const travelGal = document.createElement("gallery-teaser");
   travelGal.setAttribute("data-src", `data/travel.json`);
