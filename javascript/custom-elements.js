@@ -106,12 +106,12 @@ class AboutSection extends HTMLElement {
       if (Array.isArray(details)) {
         details.forEach((paraText) => {
           const para = document.createElement("p");
-          para.textContent = paraText; // If you're inserting plain text
+          para.innerHTML = paraText; // If you're inserting plain text
           this.appendChild(para);
         });
       } else if (typeof details === "string") {
         const para = document.createElement("p");
-        para.textContent = details; // If you're inserting plain text
+        para.innerHTML = details; 
         this.appendChild(para);
       } else {
         console.log(
