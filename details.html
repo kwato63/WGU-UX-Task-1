@@ -5,45 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Taniti</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="javascript/custom-elements.js" defer></script>
+    <script src="javascript/custom-elements.js"></script>
   </head>
   <body>
     <site-header></site-header>
-
-    <main id="mainContent">
-    </main>
-
+    <main></main>
     <site-footer></site-footer>
-
     <script>
       // Function to get and decode URL parameters
       function getParam(param) {
         const urlParams = new URLSearchParams(window.location.search);
         return decodeURIComponent(urlParams.get(param) || "");
       }
-
-      const src = getParam("src")||"main-details"
-      const title = getParam("title")||"Discover Taniti"
-
-      // Only run if both parameters are present
-      if (src && title) {
-        const main = document.getElementById("mainContent");
-
-        const hero = document.createElement("hero-banner");
-        hero.setAttribute("data-src", `data/${src}.json`);
-        hero.setAttribute("data-title", title);
-
-        const about = document.createElement("about-section");
-        about.setAttribute("data-src", `data/${src}.json`);
-        about.setAttribute("data-title", title);
-
-        main.appendChild(hero);
-        main.appendChild(about);
-      } else {
-        // Handle missing params
-        document.getElementById("mainContent").innerHTML =
-          "<p>Error: Missing 'src' or 'title' parameters in the URL.</p>";
-      }
+      const src = getParam("src") || "main-details";
+      const title = getParam("title") || "Discover Taniti";
+      build_top_display(src, title);
+      build_bottom_display();
     </script>
   </body>
 </html>
