@@ -356,14 +356,19 @@ carousel-teasers h2 {
   z-index: 1;
 }
 
+.carousel-slide:hover .carousel-image {
+  transform: scale(1.05); 
+}
+
+
 .carousel-image {
   height: 200px;
   background-size: cover;
   background-position: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: transform 0.4s ease; /* Add this */
 }
-
 .carousel-content {
   padding: 1rem;
   background: white;
