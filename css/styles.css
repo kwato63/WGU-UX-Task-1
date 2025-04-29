@@ -356,6 +356,7 @@ carousel-teasers h2 {
   z-index: 1;
 }
 
+.carousel-btn:hover .carousel-image,
 .carousel-slide:hover .carousel-image {
   transform: scale(1.2); /* bigger zoom */
   z-index: 5; /* bring it above */
