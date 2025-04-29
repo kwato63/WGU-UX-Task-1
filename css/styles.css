@@ -411,7 +411,7 @@ carousel-teasers h2 {
 .carousel-btn {
   width: 2rem;
   height: 5rem;
-  border-radius: 10px;
+  border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.4);
   font-size: 2rem;
   cursor: pointer;
@@ -428,11 +428,11 @@ carousel-teasers h2 {
 }
 
 .carousel-btn.left {
-  left: -2rem;
+  left: 1rem;
 }
 
 .carousel-btn.right {
-  right: -2rem;
+  right: 1rem;
 }
 
 /* ------------------------ */
