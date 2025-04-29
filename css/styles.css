@@ -327,7 +327,7 @@ carousel-teasers h2 {
 
 .carousel-container {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   height: 100%;
 }
@@ -357,7 +357,9 @@ carousel-teasers h2 {
 }
 
 .carousel-slide:hover .carousel-image {
-  transform: scale(1.05); 
+  transform: scale(1.2); /* bigger zoom */
+  z-index: 5; /* bring it above */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* optional: soft shadow */
 }
 
 
@@ -367,7 +369,9 @@ carousel-teasers h2 {
   background-position: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  z-index: 1;
 }
 .carousel-content {
   padding: 1rem;
