@@ -356,11 +356,13 @@ carousel-teasers h2 {
   z-index: 1;
 }
 
-.carousel-btn:hover .carousel-image,
-.carousel-slide:hover .carousel-image {
-  transform: scale(1.2); /* bigger zoom */
-  z-index: 5; /* bring it above */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* optional: soft shadow */
+.carousel-slide .carousel-image:hover {
+  transform: scale(1.2);
+  /* bigger zoom */
+  z-index: 5;
+  /* bring it above */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  /* optional: soft shadow */
 }
 
 
@@ -374,6 +376,7 @@ carousel-teasers h2 {
   position: relative;
   z-index: 1;
 }
+
 .carousel-content {
   padding: 1rem;
   background: white;
@@ -407,35 +410,37 @@ carousel-teasers h2 {
 }
 
 .carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
+  width: 2rem;
+  height: 5rem;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: white;
   font-size: 2rem;
   cursor: pointer;
-  padding: 0.4rem 1rem;
-  border-radius: 50%;
-  transition: background 0.3s ease;
+  padding: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .carousel-btn:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .carousel-btn.left {
-  left: 1rem;
+  left: -2rem;
 }
 
 .carousel-btn.right {
-  right: 1rem;
+  right: -2rem;
 }
 
 /* ------------------------ */
 /* Carousel Teaser Sections */
 /* ------------------------ */
+
+
 /* ----------------------- */
 /* Gallery Teaser Sections */
 /* ----------------------- */
