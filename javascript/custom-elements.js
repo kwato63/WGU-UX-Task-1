@@ -548,7 +548,7 @@ function build_bottom_display() {
   main.appendChild(travelGal);
 }
 const pageTitleMap = {
-  "": "Discover Taniti",
+  "/WGU-UX-Task-1": "Discover Taniti",
   "lodging": "Taniti Accommodations",
   "dining": "Experience Fine Dining",
   "attractions": "Sites to See",
