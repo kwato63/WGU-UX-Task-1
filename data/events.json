@@ -1,54 +1,56 @@
 [
-    {
-      "title": "Sunset Luau",
-      "shortDescription": "Immerse yourself in Tanitian culture with an unforgettable evening under the stars. Watch hula dancers sway to island rhythms while enjoying a buffet of traditional dishes. It’s the perfect way to end your day, with something for everyone.",
-      "details": [
-        "Held along the beach or in tropical garden settings, the Sunset Luau is a festive celebration of Taniti’s cultural heritage.",
-        "Guests are greeted with flower leis and invited to sample authentic dishes like roasted pig, taro root, and tropical fruits.",
-        "Live performances include traditional hula, fire knife dancing, and music performed by local artists.",
-        "It’s a family-friendly event that’s often included in resort packages, drawing both visitors and locals alike.",
-        "Be sure to bring your camera—the sunset views and vibrant performances make for stunning memories."
-      ],
-      "image": "images/Silhouette of beachgoers at Hanalei Beach, Kauai, Hawaii.png",
-      "imageCredit": "Amit Basu Photography/Getty Images",
-      "imageTitle": "Silhouette of beachgoers at Hanalei Beach, Kauai, Hawaii",
-      "imageAltText": "Hanalei, Hawaii, USA - May 26, 2022 : Silhouette of beachgoers during sunset at Hanalei Beach, Kauai, Hawaii. Hanalei beach is a quiet strip of sandy beach with gentle waves, showers and picturesque mountain views on the north shore of Kauai.",
-      "heroTitle": "Experience the Sunset Luau",
-      "heroText": "Enjoy fire dances, traditional cuisine, and music beneath the evening sky—Taniti’s most festive tradition."
-    },
-    {
-      "title": "Taniti Surf Classic",
-      "shortDescription": "Join the excitement as top surfers compete on Taniti’s legendary waves. The Taniti Surf Classic combines extreme sports, beach fun, and island energy for a thrilling day at the shore.",
-      "details": [
-        "The Surf Classic draws international surf champions to challenge Taniti’s renowned reef breaks.",
-        "Held every summer, the event transforms the main beach into a vibrant festival atmosphere.",
-        "Enjoy food trucks, tropical drinks, and local vendors offering handcrafted goods and surfwear.",
-        "Spectators can lounge on the sand, cheer on competitors, and participate in interactive beach games.",
-        "Evenings conclude with live music performances, bonfires, and stargazing along the coast."
-      ],
-      "image": "images/Friends ready to surf.png",
-      "imageCredit": "Lane Oatey/Getty Images",
-      "imageTitle": "Friends ready to surf",
-      "imageAltText": "Friends ready to surf",
-      "heroTitle": "Catch the Waves at the Taniti Surf Classic",
-      "heroText": "Surf’s up! Witness elite surfers and beachside celebrations during the island’s most electrifying event."
-    },
-    {
-      "title": "Jungle Night Hike",
-      "shortDescription": "Step into a different world as you explore the rainforest after dark. This guided night hike reveals the island’s hidden nocturnal wonders in a truly magical setting.",
-      "details": [
-        "Led by expert guides, this nighttime adventure takes guests deep into Taniti’s lush rainforest trails.",
-        "Experience the jungle by moonlight, hearing the sounds of frogs, birds, and rustling leaves all around.",
-        "Spot glowing fungi, rare insects, and even the occasional tree-dwelling marsupial under a starlit sky.",
-        "Each small group is equipped with headlamps and safety gear to ensure a safe, intimate experience.",
-        "Perfect for nature lovers and photographers looking for a unique and unforgettable island excursion."
-      ],
-      "image": "images/Campfire of friends in circle on the fire.png",
-      "imageCredit": "frankreporter/Getty Images",
-      "imageTitle": "Campfire of friends in circle on the fire",
-      "imageAltText": "Campfire of friends in circle on the fire",
-      "heroTitle": "Explore the Wild Side at Night",
-      "heroText": "Discover Taniti’s nocturnal beauty on a guided rainforest hike that awakens your sense of wonder."
-    }
-  ]
-  
+  {
+    "title": "Sunset Luau",
+    "shortDescription": "Immerse yourself in Tanitian culture with an unforgettable evening under the stars. Watch hula dancers sway to island rhythms while enjoying a buffet of traditional dishes. It’s the perfect way to end your day, with something for everyone.",
+    "details": [
+      "Held along the beach or in tropical garden settings, the Sunset Luau is a festive celebration of Taniti’s cultural heritage. The event showcases the beauty of the island's traditions, offering an immersive experience for visitors.",
+      "Guests are greeted with flower leis and invited to sample authentic dishes like roasted pig, taro root, and tropical fruits. These local flavors will transport you to the heart of Taniti, combining culinary delights with the spirit of the islands.",
+      "Live performances include traditional hula, fire knife dancing, and music performed by local artists. The evening is a colorful celebration of Taniti’s artistic expressions and is one of the highlights of the resort experience.",
+      "It’s a family-friendly event that’s often included in resort packages, drawing both visitors and locals alike. Whether you are new to the island or a returning guest, the Sunset Luau is a must-do experience.",
+      "Be sure to bring your camera—the sunset views and vibrant performances make for stunning memories. The combination of natural beauty and cultural displays creates the perfect setting for photos and lasting memories.",
+      "<h3>Contact</h3><ul><li>Address: 7 Driftwood Lane, Taniti Lagoon</li><li>Phone: (555) 345-7890</li><li>Email: lagoonbungalows@taniti.example.com</li><li>Event Date/Time: May 15, 2025 - 6:00 PM</li></ul>"
+    ],
+    "image": "images/Silhouette of beachgoers at Hanalei Beach, Kauai, Hawaii.png",
+    "imageCredit": "Amit Basu Photography/Getty Images",
+    "imageTitle": "Silhouette of beachgoers at Hanalei Beach, Kauai, Hawaii",
+    "imageAltText": "Hanalei, Hawaii, USA - May 26, 2022 : Silhouette of beachgoers during sunset at Hanalei Beach, Kauai, Hawaii. Hanalei beach is a quiet strip of sandy beach with gentle waves, showers and picturesque mountain views on the north shore of Kauai.",
+    "heroTitle": "Experience the Sunset Luau",
+    "heroText": "Enjoy fire dances, traditional cuisine, and music beneath the evening sky—Taniti’s most festive tradition."
+  },
+  {
+    "title": "Taniti Surf Classic",
+    "shortDescription": "Join the excitement as top surfers compete on Taniti’s legendary waves. The Taniti Surf Classic combines extreme sports, beach fun, and island energy for a thrilling day at the shore.",
+    "details": [
+      "The Surf Classic draws international surf champions to challenge Taniti’s renowned reef breaks. This thrilling competition showcases the world’s best surfers as they battle the island’s powerful waves.",
+      "Held every summer, the event transforms the main beach into a vibrant festival atmosphere. Surrounded by food trucks, vendors, and music, it becomes an energetic celebration of island culture.",
+      "Enjoy food trucks, tropical drinks, and local vendors offering handcrafted goods and surfwear. Whether you’re here to watch the competition or shop for unique souvenirs, there’s plenty to experience on the beach.",
+      "Spectators can lounge on the sand, cheer on competitors, and participate in interactive beach games. The event’s laid-back vibe invites everyone to join in on the fun and celebrate Taniti’s surf culture.",
+      "Evenings conclude with live music performances, bonfires, and stargazing along the coast. As the sun sets, the beach becomes the perfect spot to relax and unwind with friends and family.",
+      "<h3>Contact</h3><ul><li>Address: 7 Driftwood Lane, Taniti Lagoon</li><li>Phone: (555) 678-1234</li><li>Email: surfclassic@taniti.example.com</li><li>Event Date/Time: May 20, 2025 - 9:00 AM</li></ul>"
+    ],
+    "image": "images/Friends ready to surf.png",
+    "imageCredit": "Lane Oatey/Getty Images",
+    "imageTitle": "Friends ready to surf",
+    "imageAltText": "Friends ready to surf",
+    "heroTitle": "Catch the Waves at the Taniti Surf Classic",
+    "heroText": "Surf’s up! Witness elite surfers and beachside celebrations during the island’s most electrifying event."
+  },
+  {
+    "title": "Jungle Night Hike",
+    "shortDescription": "Step into a different world as you explore the rainforest after dark. This guided night hike reveals the island’s hidden nocturnal wonders in a truly magical setting.",
+    "details": [
+      "Led by expert guides, this nighttime adventure takes guests deep into Taniti’s lush rainforest trails. As you venture through the jungle, you’ll be surrounded by the sights and sounds of nature at night.",
+      "Experience the jungle by moonlight, hearing the sounds of frogs, birds, and rustling leaves all around. The stillness of the night contrasts with the lively sounds of the jungle, creating a unique atmosphere.",
+      "Spot glowing fungi, rare insects, and even the occasional tree-dwelling marsupial under a starlit sky. The hike offers a rare glimpse of the island’s nocturnal ecosystem, showcasing the hidden life that thrives after dark.",
+      "Each small group is equipped with headlamps and safety gear to ensure a safe, intimate experience. The knowledgeable guides will share fascinating insights into the rainforest’s ecology as you explore.",
+      "Perfect for nature lovers and photographers looking for a unique and unforgettable island excursion. The beauty of the jungle at night will captivate your senses and leave you with unforgettable memories.",
+      "<h3>Contact</h3><ul><li>Address: 7 Driftwood Lane, Taniti Lagoon</li><li>Phone: (555) 987-6543</li><li>Email: junglehike@taniti.example.com</li><li>Event Date/Time: May 25, 2025 - 7:00 PM</li></ul>"
+    ],
+    "image": "images/Campfire of friends in circle on the fire.png",
+    "imageCredit": "frankreporter/Getty Images",
+    "imageTitle": "Campfire of friends in circle on the fire",
+    "imageAltText": "Campfire of friends in circle on the fire",
+    "heroTitle": "Explore the Wild Side at Night",
+    "heroText": "Discover Taniti’s nocturnal beauty on a guided rainforest hike that awakens your sense of wonder."
+  }
+]
