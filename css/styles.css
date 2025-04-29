@@ -367,7 +367,7 @@ carousel-teasers h2 {
   background-position: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  transition: transform 0.4s ease; /* Add this */
+  transition: transform 0.4s ease;
 }
 .carousel-content {
   padding: 1rem;
