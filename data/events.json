@@ -15,7 +15,8 @@
     "imageTitle": "Silhouette of beachgoers at Hanalei Beach, Kauai, Hawaii",
     "imageAltText": "Hanalei, Hawaii, USA - May 26, 2022 : Silhouette of beachgoers during sunset at Hanalei Beach, Kauai, Hawaii. Hanalei beach is a quiet strip of sandy beach with gentle waves, showers and picturesque mountain views on the north shore of Kauai.",
     "heroTitle": "Experience the Sunset Luau",
-    "heroText": "Enjoy fire dances, traditional cuisine, and music beneath the evening sky—Taniti’s most festive tradition."
+    "heroText": "Enjoy fire dances, traditional cuisine, and music beneath the evening sky—Taniti’s most festive tradition.",
+    "externalLinkText":"Sign Me Up!"
   },
   {
     "title": "Taniti Surf Classic",
@@ -33,7 +34,8 @@
     "imageTitle": "Friends ready to surf",
     "imageAltText": "Friends ready to surf",
     "heroTitle": "Catch the Waves at the Taniti Surf Classic",
-    "heroText": "Surf’s up! Witness elite surfers and beachside celebrations during the island’s most electrifying event."
+    "heroText": "Surf’s up! Witness elite surfers and beachside celebrations during the island’s most electrifying event.",
+    "externalLinkText":"Sign Me Up!"
   },
   {
     "title": "Jungle Night Hike",
@@ -51,6 +53,7 @@
     "imageTitle": "Campfire of friends in circle on the fire",
     "imageAltText": "Campfire of friends in circle on the fire",
     "heroTitle": "Explore the Wild Side at Night",
-    "heroText": "Discover Taniti’s nocturnal beauty on a guided rainforest hike that awakens your sense of wonder."
+    "heroText": "Discover Taniti’s nocturnal beauty on a guided rainforest hike that awakens your sense of wonder.",
+    "externalLinkText":"Sign Me Up!"
   }
 ]

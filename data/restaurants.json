@@ -14,7 +14,8 @@
     "imageTitle": "Beachfront dining at The Coconut Grill",
     "imageAltText": "Outdoor tables on the beach with a grill and ocean in background",
     "heroTitle": "Island BBQ by the Shore",
-    "heroText": "Kick off your flip-flops and grab a seat in the sand — Coconut Grill is where flavor meets the waves."
+    "heroText": "Kick off your flip-flops and grab a seat in the sand — Coconut Grill is where flavor meets the waves.",
+    "externalLinkText":"Reserve A Table"
   },
   {
     "title": "Mango Grove",
@@ -31,7 +32,8 @@
     "imageTitle": "Mango Grove Restaurant garden patio",
     "imageAltText": "Outdoor garden restaurant with hanging lights",
     "heroTitle": "Garden Dining, Elevated",
-    "heroText": "Dine beneath the stars and among the trees with fresh, locally inspired cuisine at Mango Grove."
+    "heroText": "Dine beneath the stars and among the trees with fresh, locally inspired cuisine at Mango Grove.",
+    "externalLinkText":"Reserve A Table"
   },
   {
     "title": "Tiki Tapas Bar",
@@ -48,7 +50,8 @@
     "imageTitle": "Tiki Tapas patio at sunset",
     "imageAltText": "Cocktail bar with tapas plates and tiki torches at dusk",
     "heroTitle": "Tapas at Twilight",
-    "heroText": "From tropical bites to sunset sips, Tiki Tapas Bar is Taniti's go-to for good vibes and better views."
+    "heroText": "From tropical bites to sunset sips, Tiki Tapas Bar is Taniti's go-to for good vibes and better views.",
+    "externalLinkText":"Reserve A Table"
   },
   {
     "title": "Volcano Pizza",
@@ -65,6 +68,7 @@
     "imageTitle": "Chef placing pizza in a wood-fired oven",
     "imageAltText": "Wood-fired pizza oven and tropical toppings",
     "heroTitle": "Where Flavor Erupts",
-    "heroText": "At Volcano Pizza, bold flavors and blazing ovens create an island take on everyone’s favorite dish."
+    "heroText": "At Volcano Pizza, bold flavors and blazing ovens create an island take on everyone’s favorite dish.",
+    "externalLinkText":"Reserve A Table"
   }
 ]

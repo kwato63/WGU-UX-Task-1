@@ -14,7 +14,8 @@
     "imageTitle": "Taniti Grand Resort by the beach",
     "imageAltText": "Elegant resort facing the ocean with palm trees",
     "heroTitle": "Experience Beachfront Luxury",
-    "heroText": "Relax in ocean-view suites and savor world-class dining at Taniti’s most luxurious seaside resort."
+    "heroText": "Relax in ocean-view suites and savor world-class dining at Taniti’s most luxurious seaside resort.",
+    "externalLinkText":"Book Your Stay"
   },
   {
     "title": "Mountainview Retreat",
@@ -31,7 +32,8 @@
     "imageTitle": "Retreat in the hills of Taniti",
     "imageAltText": "Lush hillside resort with spa and scenic overlook",
     "heroTitle": "Rejuvenate in the Hills",
-    "heroText": "Escape to a peaceful sanctuary where wellness meets wilderness in Taniti’s breathtaking mountain hideaway."
+    "heroText": "Escape to a peaceful sanctuary where wellness meets wilderness in Taniti’s breathtaking mountain hideaway.",
+    "externalLinkText":"Book Your Stay"
   },
   {
     "title": "Lagoon Bungalows",
@@ -48,6 +50,7 @@
     "imageTitle": "Overwater bungalows at Taniti Lagoon",
     "imageAltText": "Thatched-roof bungalows on stilts over turquoise water",
     "heroTitle": "Sleep Above the Sea",
-    "heroText": "Drift into paradise in Taniti’s iconic overwater bungalows, where serenity and scenery meet in perfect harmony."
+    "heroText": "Drift into paradise in Taniti’s iconic overwater bungalows, where serenity and scenery meet in perfect harmony.",
+    "externalLinkText":"Book Your Stay"
   }
 ]

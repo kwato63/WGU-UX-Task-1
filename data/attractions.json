@@ -29,7 +29,8 @@
     "imageTitle": "Mount Roto Nui Volcanic Mountain Moorea Island",
     "imageAltText": "A volcanic peak covered in trees",
     "heroTitle": "Conquer Taniti’s Volcano",
-    "heroText": "Hike to the summit of Taniti’s active volcano for breathtaking views, natural wonders, and a true island adventure."
+    "heroText": "Hike to the summit of Taniti’s active volcano for breathtaking views, natural wonders, and a true island adventure.",
+    "externalLinkText":"Book A Tour"
   },
   {
     "title": "Rainforest Canopy Walk",
@@ -45,7 +46,8 @@
     "imageTitle": "Female traveller walking on tree canopy in tropical rainforest",
     "imageAltText": "High angle view of a female traveller walking and looking up on tree canopy in tropical rainforest, Danum Valley, Borneo Sabah",
     "heroTitle": "Explore the Treetops",
-    "heroText": "Step into the heart of Taniti’s rainforest — from above! A serene walk through the canopy awaits."
+    "heroText": "Step into the heart of Taniti’s rainforest — from above! A serene walk through the canopy awaits.",
+    "externalLinkText":"Plan An Adventure"
   },
   {
     "title": "Cultural Tour of Taniti City",
@@ -61,7 +63,8 @@
     "imageTitle": "Beautiful sunset at Hydra island, Greece",
     "imageAltText": "sunset over an island city on the coast",
     "heroTitle": "Experience Taniti’s Traditions",
-    "heroText": "Step back in time and discover the living culture of Taniti through local stories, markets, and architecture."
+    "heroText": "Step back in time and discover the living culture of Taniti through local stories, markets, and architecture.",
+    "externalLinkText":"Book A Tour"
   },
   {
     "title": "Sunset Harbor Cruise",
@@ -77,6 +80,7 @@
     "imageTitle": "Beautiful sunset at Hydra island, Greece",
     "imageAltText": "sunset over an island city on the coast",
     "heroTitle": "Sail into the Sunset",
-    "heroText": "Cruise Taniti’s coast as the sky turns gold. A perfect evening on the water for every kind of traveler."
+    "heroText": "Cruise Taniti’s coast as the sky turns gold. A perfect evening on the water for every kind of traveler.",
+    "externalLinkText":"Book A Cruise"
   }
 ]
