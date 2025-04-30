@@ -232,6 +232,20 @@ about-section p {
   color: #444;
 }
 
+about-section .external-link-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+about-section .external-link-btn:hover {
+  background-color: #0056b3;
+}
+
 /* -------------- */
 /* About Sections */
 /* -------------- */

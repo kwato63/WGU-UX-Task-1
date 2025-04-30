@@ -122,6 +122,7 @@ class AboutSection extends HTMLElement {
       const titleEl = document.createElement("h2");
       titleEl.textContent = matchedItem.title;
       this.appendChild(titleEl);
+
       const details = matchedItem.details;
       if (Array.isArray(details)) {
         details.forEach((paraText) => {
@@ -138,6 +139,21 @@ class AboutSection extends HTMLElement {
           `AboutSection: 'details' is not an array or a string in the data.`
         );
       }
+
+      // Check if externalLinkText exists
+      if (matchedItem.externalLinkText) {
+        const button = document.createElement("button");
+        button.textContent = matchedItem.externalLinkText;
+        button.classList.add("external-link-btn");
+
+        button.addEventListener("click", () => {
+          alert(
+            `This button will navigate to an external resource for "${matchedItem.title}" once true links are available.`
+          );
+        });
+
+        this.appendChild(button);
+      }
     } catch (err) {
       console.error(
         `AboutSection: Failed to load about section from ${dataSrc}:`,
@@ -148,6 +164,7 @@ class AboutSection extends HTMLElement {
 }
 
 customElements.define("about-section", AboutSection);
+
 
 class SearchResultTeaser extends HTMLElement {
   async connectedCallback() {
@@ -546,14 +563,6 @@ function build_bottom_display() {
 
   main.appendChild(travelGal);
 }
-const pageTitleMap = {
-  "/WGU-UX-Task-1": "Discover Taniti",
-  lodging: "Taniti Accommodations",
-  dining: "Experience Fine Dining",
-  attractions: "Sites to See",
-  entertainment: "Entertainment And Events",
-  resources: "Useful Resources",
-};
 
 function getParams() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -564,3 +573,11 @@ function getParams() {
     "Discover Taniti";
   return { src, title };
 }
+const pageTitleMap = {
+  "/WGU-UX-Task-1": "Discover Taniti",
+  lodging: "Taniti Accommodations",
+  dining: "Experience Fine Dining",
+  attractions: "Sites to See",
+  entertainment: "Entertainment And Events",
+  resources: "Useful Resources",
+};
