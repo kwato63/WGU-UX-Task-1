@@ -11,8 +11,17 @@ body {
   color: #333;
 
 }
+
 main {
   min-height: 1000px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 .image-credit {
@@ -189,9 +198,6 @@ hero-banner {
   margin-bottom: 1rem;
 }
 
-.hero-banner p {
-  font-size: 1.25rem;
-}
 
 /* ------------- */
 /* Hero Sections */
@@ -216,7 +222,7 @@ about-section {
 
 about-section h2 {
   text-align: center;
-  font-size: 2rem;
+
   margin-bottom: 1.5rem;
   color: #2c3e50;
 }
@@ -224,7 +230,6 @@ about-section h2 {
 about-section p {
   margin-bottom: 1.25rem;
   color: #444;
-  font-size: 1rem;
 }
 
 /* -------------- */
@@ -246,14 +251,12 @@ teaser-section {
 search-result-teaser h2,
 teaser-section h2 {
   text-align: center;
-  font-size: 2rem;
   margin-bottom: 2rem;
   color: #333;
 }
 
 search-result-teaser h3,
 teaser-section h3 {
-  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   text-align: left;
   color: #222;
@@ -324,7 +327,6 @@ carousel-teasers {
 
 carousel-teasers h2 {
   text-align: center;
-  font-size: 2rem;
   margin-bottom: 2rem;
   color: #333;
 }
@@ -394,12 +396,10 @@ carousel-teasers h2 {
 
 .carousel-content h3 {
   margin: 0.5rem 0;
-  font-size: 1.25rem;
   color: #222;
 }
 
 .carousel-content p {
-  font-size: 1rem;
   line-height: 1.4;
   color: #444;
 }
@@ -465,7 +465,6 @@ gallery-teaser {
 }
 
 gallery-teaser h2 {
-  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #2c3e50;
@@ -515,13 +514,11 @@ gallery-teaser .gallery-image {
 }
 
 gallery-teaser .gallery-content h3 {
-  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #0077b6;
 }
 
 gallery-teaser .gallery-content p {
-  font-size: 1rem;
   color: #333;
   margin-bottom: 0.75rem;
 }
@@ -540,7 +537,7 @@ gallery-teaser .gallery-content a:hover {
 
 gallery-teaser .gallery-content .image-credit {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #777;
   margin-top: 0.5rem;
 }
