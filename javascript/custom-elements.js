@@ -163,10 +163,7 @@ class SearchResultTeaser extends HTMLElement {
     }
 
     const reversePageTitleMap = Object.fromEntries(
-      Object.entries(pageTitleMap).map(([file, title]) => [
-        title,
-        file,
-      ])
+      Object.entries(pageTitleMap).map(([file, title]) => [title, file])
     );
 
     let jsonFiles = [];
@@ -220,7 +217,7 @@ class SearchResultTeaser extends HTMLElement {
 
       // Special handling for main-details.json matches
       if (item.src.includes("main-details.json")) {
-        mainSrc=reversePageTitleMap[item.title];
+        mainSrc = reversePageTitleMap[item.title];
       }
 
       const titleParam = encodeURIComponent(item.title);
@@ -444,16 +441,18 @@ class GalleryTeaser extends HTMLElement {
         );
         const titleParam = encodeURIComponent(item.title);
 
+        const link = `details?src=${srcParam}&title=${titleParam}`;
         card.innerHTML = `
-          <div class="gallery-image" style="background-image: url('${
-            item.image
-          }');" role="img" aria-label="${item.imageAltText}"></div>
-          <div class="gallery-content">
-            <h3>${item.title}</h3>
-            <p>${item.shortDescription}</p>
-            <a href="details?src=${srcParam}&title=${titleParam}">Read More</a>
-            <small class="image-credit">${item.imageCredit || ""}</small>
-          </div>
+          <a href="${link}" class="card-link">
+            <div class="gallery-image" style="background-image: url('${
+              item.image
+            }');" role="img" aria-label="${item.imageAltText}"></div>
+            <div class="gallery-content">
+              <h3>${item.title}</h3>
+              <p>${item.shortDescription}</p>
+              <small class="image-credit">${item.imageCredit || ""}</small>
+            </div>
+          </a>
         `;
         track.appendChild(card);
       });
@@ -549,11 +548,11 @@ function build_bottom_display() {
 }
 const pageTitleMap = {
   "/WGU-UX-Task-1": "Discover Taniti",
-  "lodging": "Taniti Accommodations",
-  "dining": "Experience Fine Dining",
-  "attractions": "Sites to See",
-  "entertainment": "Entertainment And Events",
-  "resources": "Useful Resources",
+  lodging: "Taniti Accommodations",
+  dining: "Experience Fine Dining",
+  attractions: "Sites to See",
+  entertainment: "Entertainment And Events",
+  resources: "Useful Resources",
 };
 
 function getParams() {
