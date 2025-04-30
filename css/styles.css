@@ -287,7 +287,7 @@ teaser-section a:hover {
 .teaser-left {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: left;
   align-items: flex-start;
   /* Optional: aligns image and text top */
   margin-bottom: 2.5rem;
@@ -296,7 +296,7 @@ teaser-section a:hover {
 .teaser-right {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: right;
   align-items: flex-start;
   margin-bottom: 2.5rem;
 }
