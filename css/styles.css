@@ -10,6 +10,9 @@ body {
   color: #333;
 
 }
+main {
+  min-height: 1000px;
+}
 
 .image-credit {
   display: block;
@@ -235,7 +238,6 @@ teaser-section {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  min-height: 1000px;
   margin: 0 auto;
   padding: 2rem;
 }
