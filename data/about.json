@@ -13,7 +13,8 @@
     "imageTitle": "Beautiful sunset at Hydra island, Greece",
     "imageAltText": "sunset over an island city on the coast",
     "heroTitle": "Explore Taniti City",
-    "heroText": "Experience the heart of the island. From beach days to nightlife, discover the vibrant capital of Taniti."
+    "heroText": "Experience the heart of the island. From beach days to nightlife, discover the vibrant capital of Taniti.",
+    "externalLinkText":"Book A Tour"
   },
   {
     "title": "Yellow Leaf Bay",
@@ -29,7 +30,8 @@
     "imageTitle": "Beautiful sunset at Hydra island, Greece",
     "imageAltText": "sunset over an island city on the coast",
     "heroTitle": "Welcome to Yellow Leaf Bay",
-    "heroText": "Turquoise waters, white sand, and endless ocean adventures await on the shores of Yellow Leaf Bay."
+    "heroText": "Turquoise waters, white sand, and endless ocean adventures await on the shores of Yellow Leaf Bay.",
+    "externalLinkText":"Book A Tour"
   },
   {
     "title": "Merriton Landing",
@@ -45,7 +47,8 @@
     "imageTitle": "Beautiful sunset at Hydra island, Greece",
     "imageAltText": "sunset over an island city on the coast",
     "heroTitle": "Discover Merriton Landing",
-    "heroText": "A cultural crossroads of fun and flavor. Merriton Landing is Taniti’s nightlife and arts hub on the water."
+    "heroText": "A cultural crossroads of fun and flavor. Merriton Landing is Taniti’s nightlife and arts hub on the water.",
+    "externalLinkText":"Book A Tour"
   },
   {
     "title": "Rainforest Interior",
@@ -61,7 +64,8 @@
     "imageTitle": "Chamarel Waterfall Mauritius Island",
     "imageAltText": "Waterfall in jungle",
     "heroTitle": "Journey into the Rainforest",
-    "heroText": "Nature lovers and thrill seekers unite. Discover Taniti’s wild heart in its rainforest interior."
+    "heroText": "Nature lovers and thrill seekers unite. Discover Taniti’s wild heart in its rainforest interior.",
+    "externalLinkText":"Book A Tour"
   },
   {
     "title": "Volcanic Highlands",
@@ -77,6 +81,7 @@
     "imageTitle": "Beautiful sunset at Hydra island, Greece",
     "imageAltText": "sunset over an island city on the coast",
     "heroTitle": "Explore the Volcanic Highlands",
-    "heroText": "Witness the raw beauty and power of nature from Taniti’s ancient volcanic peaks."
+    "heroText": "Witness the raw beauty and power of nature from Taniti’s ancient volcanic peaks.",
+    "externalLinkText":"Book A Tour"
   }
 ]
