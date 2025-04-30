@@ -1,93 +1,92 @@
 [
-    {
-      "title": "Discover Taniti",
-      "shortDescription": "Your tropical island escape awaits. Explore white-sand beaches, lush rainforests, and unforgettable island adventures.",
-      "details": [
-        "Taniti is a small, tropical island in the Pacific with a diverse landscape of beaches, mountains, and rainforests. Learn about our history, culture, and must-see locations.",
-        "Discover hidden coves, ancient temples, and bustling local markets. Our island offers both relaxing getaways and thrilling adventures for travelers of all kinds.",
-        "Whether you're lounging on the beach or hiking through our lush jungles, Taniti promises an unforgettable experience with its breathtaking scenery and vibrant culture."
-      ],
-      "image": "images/Beach.jpeg",
-      "imageCredit": "M Swiet Productions/Getty Images",
-      "imageTitle": "Evening strolls in downtown Taniti City",
-      "imageAltText": "People walking past colorful shops and cafes in Taniti City",
-      "heroTitle": "Welcome to Taniti",
-      "heroText": "Your tropical island escape awaits. Explore white-sand beaches, lush rainforests, and unforgettable island adventures."
-    },
-    {
-      "title": "Taniti Accommodations",
-      "shortDescription": "Find your perfect home away from home — from luxury resorts to cozy beachfront cottages.",
-      "details": [
-        "Taniti offers a wide variety of lodging options to fit every budget and style. Choose from elegant resorts, family-run inns, or secluded beachfront villas.",
-        "Stay in the heart of Taniti City for easy access to dining and entertainment, or escape to a peaceful bungalow surrounded by nature.",
-        "Many accommodations include amenities like guided tours, spa services, and easy access to our beautiful beaches and hiking trails."
-      ],
-      "image": "images/Beach.jpeg",
-      "imageCredit": "M Swiet Productions/Getty Images",
-      "imageTitle": "Oceanfront resorts on Taniti's golden coast",
-      "imageAltText": "Luxury beachfront resorts with palm trees and ocean views",
-      "heroTitle": "Stay in Comfort",
-      "heroText": "From five-star resorts to cozy cottages, Taniti offers lodging options for every traveler."
-    },
-    {
-      "title": "Experience Fine Dining",
-      "shortDescription": "Savor the flavors of Taniti — fresh seafood, tropical fruits, and world-class cuisine.",
-      "details": [
-        "Taniti's diverse dining scene blends traditional island flavors with international influences. Enjoy fresh seafood, tropical fruits, and vibrant local dishes.",
-        "Explore street food stalls, beachside cafes, and gourmet restaurants. Our chefs take pride in using fresh, locally sourced ingredients.",
-        "Don't miss Taniti’s famous coconut-crusted shrimp, tropical fruit desserts, and handcrafted island cocktails."
-      ],
-      "image": "images/Beach.jpeg",
-      "imageCredit": "M Swiet Productions/Getty Images",
-      "imageTitle": "Fine dining in Taniti City",
-      "imageAltText": "Elegant dishes being served at a fine dining restaurant in Taniti City",
-      "heroTitle": "Taste the Island",
-      "heroText": "Fresh, flavorful, unforgettable — Taniti’s dining scene is a feast for the senses."
-    },
-    {
-      "title": "Sites to See",
-      "shortDescription": "Adventure awaits! Explore stunning beaches, historic sites, and natural wonders across Taniti.",
-      "details": [
-        "Visit breathtaking waterfalls, hike through ancient rainforests, and marvel at volcanic landscapes.",
-        "Experience Taniti’s rich culture by touring historical villages, museums, and sacred temples.",
-        "Guided tours are available to many attractions, offering insider knowledge on the island's history, ecology, and folklore."
-      ],
-      "image": "images/Beach.jpeg",
-      "imageCredit": "M Swiet Productions/Getty Images",
-      "imageTitle": "Ancient temple ruins deep in the rainforest",
-      "imageAltText": "Moss-covered stone temple surrounded by lush jungle",
-      "heroTitle": "Explore Taniti",
-      "heroText": "Breathtaking scenery and cultural treasures await around every corner."
-    },
-    {
-      "title": "Entertainment And Events",
-      "shortDescription": "The fun never stops — enjoy live music, festivals, night markets, and island adventures.",
-      "details": [
-        "From traditional dance performances to modern music festivals, Taniti’s entertainment scene offers something for everyone.",
-        "Explore lively night markets, cultural shows, and beachfront bars with live bands playing into the night.",
-        "Seasonal events like the Taniti Summer Festival and Island Arts Fair bring the community and visitors together for unforgettable celebrations."
-      ],
-      "image": "images/Beach.jpeg",
-      "imageCredit": "M Swiet Productions/Getty Images",
-      "imageTitle": "Live music under the stars",
-      "imageAltText": "Musicians performing on a stage with colorful lights at night",
-      "heroTitle": "Celebrate Life",
-      "heroText": "Music, dance, festivals, and fun — experience Taniti’s vibrant spirit."
-    },
-    {
-      "title": "Useful Resources",
-      "shortDescription": "Everything you need to plan your trip — transportation, safety tips, travel guides, and more.",
-      "details": [
-        "Find helpful information about getting around Taniti, from rental cars to ferries and public transportation.",
-        "Learn important tips for staying safe while enjoying our beaches, hiking trails, and city streets.",
-        "Access travel guides, maps, emergency contacts, and insider advice to make the most of your island adventure."
-      ],
-      "image": "images/Beach.jpeg",
-      "imageCredit": "M Swiet Productions/Getty Images",
-      "imageTitle": "Helpful guides for exploring Taniti",
-      "imageAltText": "Map, guidebook, and tropical drink on a wooden table",
-      "heroTitle": "Plan Your Adventure",
-      "heroText": "Prepare for an amazing journey with our helpful resources and insider tips."
-    }
-  ]
-  
+  {
+    "title": "Discover Taniti",
+    "shortDescription": "Your tropical island escape awaits. Explore white-sand beaches, lush rainforests, and unforgettable island adventures.",
+    "details": [
+      "Taniti is a small island paradise located in the Pacific, spanning under 500 square miles but offering a diverse landscape of sandy beaches, lush rainforests, and volcanic mountains. Despite its size, Taniti boasts a rich cultural heritage and a close-knit community of about 20,000 indigenous residents. Historically reliant on fishing and agriculture, the island has recently embraced tourism as a growing industry. Visitors can enjoy the contrast of relaxing coastal views and exciting inland excursions.",
+      "The island is home to hidden coves perfect for swimming or sunbathing, as well as ancient temples nestled within the tropical interior. The bustling local markets in Taniti City provide a vibrant glimpse into island life, offering everything from handmade crafts to freshly caught seafood. Exploring these markets is a cultural experience in itself, revealing the islanders' warmth and craftsmanship. You'll also find authentic architecture and performances by local musicians and dancers.",
+      "Whether you prefer quiet moments lounging on white-sand beaches or high-energy adventures like rainforest hikes and volcano tours, Taniti has it all. The island's natural beauty is complemented by its welcoming atmosphere and commitment to preserving the local environment and culture. It's easy to unplug and unwind or stay active with snorkeling, zip-lining, and more. Whatever your pace, Taniti offers an unforgettable experience tailored to your travel style."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "M Swiet Productions/Getty Images",
+    "imageTitle": "Evening strolls in downtown Taniti City",
+    "imageAltText": "People walking past colorful shops and cafes in Taniti City",
+    "heroTitle": "Welcome to Taniti",
+    "heroText": "Your tropical island escape awaits. Explore white-sand beaches, lush rainforests, and unforgettable island adventures."
+  },
+  {
+    "title": "Taniti Accommodations",
+    "shortDescription": "Find your perfect home away from home — from luxury resorts to cozy beachfront cottages.",
+    "details": [
+      "Taniti offers a wide range of accommodations that suit every traveler's budget and taste, from luxury four-star resorts to affordable hostels and family-owned inns. Whether you're planning a romantic retreat or a family vacation, you’ll find options that combine comfort with authentic island charm. All lodging is closely regulated by the Tanitian government to ensure safety, cleanliness, and quality service. The growing number of bed and breakfasts reflects the island’s increasing popularity with tourists.",
+      "Staying in the heart of Taniti City gives you quick access to restaurants, shops, and nightlife while allowing you to immerse yourself in local culture. You can walk to the beaches, enjoy fresh food markets, or hop on a bus to explore nearby sights. City accommodations are perfect for travelers who enjoy convenience and social energy. Many lodgings even offer packages that include tours, meals, or spa treatments.",
+      "If you prefer seclusion, book a quiet bungalow nestled in the rainforest or a beachfront cottage with stunning sunset views. These peaceful retreats offer privacy and nature immersion, ideal for those looking to unplug. Guests in remote areas can often spot tropical birds or hear the distant hum of waves crashing on the shore. Transportation options make it easy to access popular sites from anywhere on the island."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "M Swiet Productions/Getty Images",
+    "imageTitle": "Oceanfront resorts on Taniti's golden coast",
+    "imageAltText": "Luxury beachfront resorts with palm trees and ocean views",
+    "heroTitle": "Stay in Comfort",
+    "heroText": "From five-star resorts to cozy cottages, Taniti offers lodging options for every traveler."
+  },
+  {
+    "title": "Experience Fine Dining",
+    "shortDescription": "Savor the flavors of Taniti — fresh seafood, tropical fruits, and world-class cuisine.",
+    "details": [
+      "Taniti’s food scene is a delicious fusion of traditional island recipes and international influences, with local chefs putting a unique spin on global favorites. From fresh fish and rice to coconut-based stews and spicy fruit salsas, the flavors reflect both the island’s resources and its cultural richness. Many restaurants emphasize sustainable sourcing and use ingredients harvested on the island or caught in surrounding waters. Dining in Taniti is as much about the experience as it is about the food itself.",
+      "Street food stalls in Taniti City offer tasty snacks like grilled fish skewers, tropical fruit smoothies, and sweet fried pastries. You can also dine at charming beachside cafes or enjoy an upscale meal in a modern, air-conditioned restaurant. Pan-Asian and American-style dishes are available for those looking for familiar flavors. No matter where you eat, the focus on freshness and presentation makes every meal memorable.",
+      "Signature dishes include coconut-crusted shrimp, seafood curry, and desserts made from papaya, mango, and banana. Local drinks like coconut water and handcrafted cocktails using island-grown herbs are also popular. Dining here is often enhanced by live music, ocean views, and a friendly, relaxed atmosphere. Whether you’re enjoying a quick lunch or an elegant dinner, Taniti’s culinary scene will leave a lasting impression."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "M Swiet Productions/Getty Images",
+    "imageTitle": "Fine dining in Taniti City",
+    "imageAltText": "Elegant dishes being served at a fine dining restaurant in Taniti City",
+    "heroTitle": "Taste the Island",
+    "heroText": "Fresh, flavorful, unforgettable — Taniti’s dining scene is a feast for the senses."
+  },
+  {
+    "title": "Sites to See",
+    "shortDescription": "Adventure awaits! Explore stunning beaches, historic sites, and natural wonders across Taniti.",
+    "details": [
+      "Taniti is packed with breathtaking natural landmarks, including lush rainforests, hidden waterfalls, and a small active volcano that you can visit with a guided tour. Hikers will love the scenic trails that pass through dense jungle and lead to lookout points with sweeping views. The island's varied terrain makes it easy to find adventures that match your skill level and interests. Along the way, you may spot exotic birds, rare flowers, and even ancient ruins.",
+      "Cultural enthusiasts can explore traditional villages, visit sacred temples tucked deep in the forest, or spend time at the local museum learning about Taniti’s rich history. Many of these sites highlight the customs, stories, and craftsmanship of the indigenous people. Visiting these places fosters a deeper appreciation of the island’s identity and traditions. The combination of natural and cultural sites makes each excursion uniquely fulfilling.",
+      "Tours are available for many of Taniti's most popular sights, often led by knowledgeable locals who share folklore, ecological facts, and historical insights. These guides offer a deeper connection to the island and help you experience it through the eyes of someone who calls it home. Whether you choose to explore by foot, boat, or helicopter, the island's attractions are always just a short journey away."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "M Swiet Productions/Getty Images",
+    "imageTitle": "Ancient temple ruins deep in the rainforest",
+    "imageAltText": "Moss-covered stone temple surrounded by lush jungle",
+    "heroTitle": "Explore Taniti",
+    "heroText": "Breathtaking scenery and cultural treasures await around every corner."
+  },
+  {
+    "title": "Entertainment And Events",
+    "shortDescription": "The fun never stops — enjoy live music, festivals, night markets, and island adventures.",
+    "details": [
+      "Taniti offers a wide variety of entertainment options that appeal to all kinds of travelers. Whether you’re into traditional dance performances or modern music festivals, there’s always something exciting happening on the island. Merriton Landing, a vibrant district on the north side of Yellow Leaf Bay, is the hub of nightlife and entertainment. With its growing list of bars, clubs, and venues, it's easy to find fun after the sun sets.",
+      "Live music is a big part of island culture, and local bands frequently perform at beachfront bars, community events, and open-air stages. From acoustic sets to high-energy tropical beats, the music scene is both lively and diverse. Dancers and fire performers also entertain crowds during weekly night markets. These events are free to attend and bring together locals and visitors in celebration of Taniti’s creative spirit.",
+      "Annual events like the Taniti Summer Festival and Island Arts Fair are especially popular, showcasing local food, art, and music. These seasonal festivals draw tourists from around the globe and offer a perfect blend of relaxation and excitement. Families, solo travelers, and couples alike will find entertainment options that match their energy and mood. The island’s calendar is always full of opportunities to join in the fun."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "M Swiet Productions/Getty Images",
+    "imageTitle": "Live music under the stars",
+    "imageAltText": "Musicians performing on a stage with colorful lights at night",
+    "heroTitle": "Celebrate Life",
+    "heroText": "Music, dance, festivals, and fun — experience Taniti’s vibrant spirit."
+  },
+  {
+    "title": "Useful Resources",
+    "shortDescription": "Everything you need to plan your trip — transportation, safety tips, travel guides, and more.",
+    "details": [
+      "Getting around Taniti is easy thanks to a range of transportation options, including public and private buses, rental cars, taxis, and bike rentals. The island's airport serves small aircraft, and plans are underway to expand the facility for larger jets in the future. Many tourists enjoy walking or biking around Taniti City, which is flat, safe, and very pedestrian-friendly. For those arriving by cruise ship, Yellow Leaf Bay provides a charming harbor and quick access to city sights.",
+      "Travelers should take basic safety precautions, especially in crowded areas where petty crimes like pickpocketing may occur. Taniti is generally very safe, with low rates of violent crime and a strong community spirit. Helmets are required by law for bike riders, and swimming in designated beach areas is always recommended. The island also has a hospital and several multilingual clinics available in case of emergencies.",
+      "To help you make the most of your trip, we provide travel guides, maps, and local tips through visitor centers and online resources. These include recommended itineraries, cultural etiquette, emergency contact numbers, and more. Whether you're here for relaxation or adventure, being informed helps ensure a smooth and enjoyable experience."
+    ],
+    "image": "images/Beach.jpeg",
+    "imageCredit": "M Swiet Productions/Getty Images",
+    "imageTitle": "Helpful guides for exploring Taniti",
+    "imageAltText": "Map, guidebook, and tropical drink on a wooden table",
+    "heroTitle": "Plan Your Adventure",
+    "heroText": "Prepare for an amazing journey with our helpful resources and insider tips."
+  }
+]

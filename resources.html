@@ -10,16 +10,12 @@
   <body>
     <site-header></site-header>
     <main>
-      <carousel-teasers
-        data-src="data/attractions.json"
-        data-header="Things To Do On Taniti"
-      ></carousel-teasers>
     </main>
     <site-footer></site-footer>
     <script>
       const { src, title } = getParams();
       build_top_display(src, title);
-      build_bottom_display();
+      build_bottom_display(true);
     </script>
   </body>
 </html>
